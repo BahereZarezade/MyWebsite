@@ -1,0 +1,10 @@
+/* 
+@font-face {
+    font-family: 'Mj_Casablanca-Heavy';
+    src: url('Mj_Casablanca-Heavy.ttf');
+}
+
+
+html[lang="fa"] body{
+    font-family: Mj_Casablanca-Heavy;
+  } */

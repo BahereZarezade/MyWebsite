@@ -1,0 +1,10 @@
+
+@font-face {
+    font-family: 'Kalame';
+    src: url('font.ttf');
+}
+
+
+html[lang="fa"] body{
+    font-family: Kalame;
+  }

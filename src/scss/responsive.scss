@@ -1,0 +1,2285 @@
+@import "variables";
+@import "../vendors/bootstrap-5.0.0/scss/functions";
+@import "../vendors/bootstrap-5.0.0/scss/variables";
+@import "../vendors/bootstrap-5.0.0/scss/mixins";
+
+
+//*********************************index.html*****************************************
+@media(max-width : 320px) {
+    header .search{
+    position: absolute;
+    top: 22%;
+    left: 3%;
+    &:hover{
+        width: 175px;
+    }
+    }
+    header .search .search-txt {
+        position: relative;
+        right: 10px;
+        bottom: 5px;
+        border: none;
+        background: none;
+        outline: none;
+        float: left;
+        padding: 0;
+        font-size: 14px;
+        color: #7f8fa6;
+        transition: 200ms;
+        line-height: 27px;
+        width: 0px;
+        direction: rtl;
+        font-family: Vazir;
+        padding-right: 10px;
+        font-weight: bold;
+    }
+    section#index{
+        #container_index{
+            height: 100%;
+            #title-top{
+                font-size: 30px;
+            }
+           #title-org{
+                font-size: 15px;
+            }
+            .takhasos{
+                font-size: 15px;
+            }     
+            .ability-item{
+                font-size: 16px;
+            }
+            .fas{
+             display: none;
+            }
+            .fab{
+            font-size: 17px;
+            position: relative;
+            bottom: 5px;
+            }
+            .far{
+            font-size: 17px;
+            position: relative;
+            bottom: 5px;
+            }
+            .social-item{
+                width: 32px;
+                height: 30px;
+            }
+        }
+    }
+    //*********************************info*********************************************
+    section#info{
+    #container_info{
+        background-color: rgb(255, 255, 255);
+        height: 100%;
+        width: 100vw;
+        } 
+    }
+    //*********************************skills******************************************
+    section#skills{
+        #container_skills{
+            height: 100%;
+            width: 100vw;
+            } 
+     }
+    //*********************************projects*****************************************
+    section#projects{
+    #container_projects{
+        height: 100%;
+    .carousel-inner{
+        position: relative;
+        bottom: 47px;
+        height: 21rem;
+        width: 15.6rem;
+        left: 78px;
+     }
+    #carouselExampleDark{
+        position: relative;
+        bottom: 2rem;
+    }
+    .carousel-indicators{
+        width: 30px;
+        position: relative;
+        right: 1.3rem;
+    }
+      .carousel-indicators{
+          position: relative;
+          top:17rem;
+      }
+      .carousel-control-next-icon{
+        position: relative;
+        bottom: 1.5rem;
+        left: 3.5rem;
+        height: 26px;
+      }
+      .carousel-control-prev-icon{
+        position: relative;
+        bottom: 1.5rem;
+        right: 3.5rem;
+        height: 26px;
+      }
+     } 
+    }
+    //*********************************services*****************************************
+    section#services{
+    #container_services{
+    height: 100%;
+    .fas , .fab{
+    font-size: 35px;
+    }
+    .card{
+    height: 56vh;
+    }
+    #btn_card{
+    height: 6vh;
+    margin-top: 7vh;
+    font-size: 12px;
+    }
+    }
+    }
+    //*********************************call*****************************************
+    section#call{
+    #container_call{
+        height: 100%;
+        .card-body{
+         width: 87vw;  
+         height: 17rem;
+         h2{
+        font-size: 16px;
+        } 
+        p{
+        font-size: 13px;
+        }
+        .info{
+        position: relative;
+        top: 3vh
+        }
+        .caption{
+            font-size: 13px;
+            width: 50%;
+            position: absolute;
+            top: 10vh;
+        }
+        .image-container img{
+            width: 49%;
+            height: 54%;
+            position: absolute;
+            top: 35px;
+        }
+        }
+        
+    }
+    }
+    //*********************************idea*****************************************
+    section#idea{
+    #container_idea{
+        width: 80%;
+        height: 100%;
+        h4 , p{
+            font-size: 16px;
+        }
+        #alert_idea{
+            position: relative;
+            left: 33px;
+            height: 58vh;
+            width: 89vw;
+        }
+        .col-4{
+            width: 100%;
+        }
+        .form-control{
+            font-size: 10px;
+        }
+        .btn.btn-primary{
+            height: 5vh;
+            font-size: 12px;
+        }
+        #exampleFormControlTextarea1 {
+            height: 15vh;
+        }
+    }
+    }
+    //*********************************footer*****************************************
+    section#footer{
+    footer.bg-dark{
+        #container_footer{
+            height: 100%;
+        .fas{
+            font-size: 12px; 
+           }
+        }
+        p{
+            font-size: 16px;
+        }
+        .col-4{
+            width: 100%;
+        }
+        #myBtn{
+    display: none;
+            }
+    }
+    }
+}
+
+@media(min-width : 321px) and (max-width : 359px) {
+    section#index{
+        #container_index{
+            height: 100%;
+            #title-top{
+                font-size: 30px;
+            }
+           #title-org{
+                font-size: 19px;
+            }
+            .takhasos{
+                font-size: 15px;
+            }     
+            .ability-item{
+                font-size: 16px;
+            }
+            .fas{
+             display: none;
+            }
+            .fab{
+            font-size: 17px;
+            position: relative;
+            bottom: 5px;
+            }
+            .far{
+            font-size: 17px;
+            position: relative;
+            bottom: 5px;
+            }
+            .social-item{
+                width: 35px;
+                height: 30px;
+            }
+        }
+    }
+    //*********************************info*********************************************
+    section#info{
+    #container_info{
+        background-color: rgb(255, 255, 255);
+        height: 100%;
+        width: 100vw;
+        } 
+    }
+    //*********************************skills******************************************
+    section#skills{
+        #container_skills{
+            height: 100%;
+            width: 100vw;
+            } 
+     }
+    //*********************************projects*****************************************
+    section#projects{
+    #container_projects{
+        height: 100%;
+    .carousel-inner{
+        position: relative;
+        bottom: 53px;
+        height: 9rem;
+        width: 18rem;
+        left: 87px;
+     }
+    #carouselExampleDark{
+        position: relative;
+        bottom: 2rem;
+    }
+    .carousel-indicators{
+        width: 30px;
+        position: relative;
+        right: 2.3rem;
+    }
+      .carousel-indicators{
+          position: relative;
+          top:7rem;
+      }
+      .carousel-control-next-icon{
+        position: relative;
+        bottom: 1.5rem;
+        left: 4.5rem;
+        height: 10px;
+      }
+      .carousel-control-prev-icon{
+        position: relative;
+        bottom: 1.5rem;
+        right: 4.5rem;
+        height: 10px;
+      }
+     } 
+    }
+    //*********************************services*****************************************
+    section#services{
+    #container_services{
+    height: 100%;
+    #btn_card {
+     margin-top: 8vh;
+    }
+    .fas , .fab{
+    font-size: 35px;
+    }
+    .card{
+    height: 58vh;
+    }
+    .card-text{
+        height: 5rem;
+    }
+    }
+    }
+    //*********************************call*****************************************
+    section#call{
+    #container_call{
+        height: 100%;
+        .card-body{
+         width: 89vw;  
+         h2{
+        font-size: 13px;
+        } 
+        p{
+        font-size: 13px;
+        }
+        .info{
+        position: relative;
+        top: 7vh
+        }
+        .caption{
+            font-size: 10px;
+            width: 50%;
+        }
+        .image-container img{
+            width: 44%;
+            height: 75%;
+        }
+        }
+        
+    }
+    }
+    //*********************************idea*****************************************
+    section#idea{
+    #container_idea{
+        width: 80%;
+        height: 100%;
+        h4 , p{
+            font-size: 16px;
+        }
+        #alert_idea{
+            width: 88vw;
+            position: relative;
+            left: 2rem;
+            height: 100%;
+        }
+        .col-4{
+            width: 100%;
+        }
+        .form-control{
+            font-size: 8px;
+        }
+        .btn.btn-primary{
+            height: 4vh;
+            font-size: 8px;
+        }
+        #exampleFormControlTextarea1 {
+            height: 100%;
+        }
+    }
+    }
+    //*********************************footer*****************************************
+    section#footer{
+    footer.bg-dark{
+        #container_footer{
+            height: 100%;
+        .fas{
+            font-size: 25px; 
+           }
+        }
+        p{
+            font-size: 16px;
+        }
+        .col-4{
+            width: 100%;
+        }
+        #myBtn{
+    display: none;
+            }
+    }
+    }
+}
+
+
+@media(min-width : 360px) and (max-width : 375px) {
+    section#index{
+        #container_index{
+            height: 100%;
+            #title-top{
+                font-size: 30px;
+            }
+           #title-org{
+                font-size: 19px;
+            }
+            .takhasos{
+                font-size: 15px;
+            }     
+            .ability-item{
+                font-size: 16px;
+            }
+            .fas{
+             display: none;
+            }
+            .fab{
+            font-size: 17px;
+            position: relative;
+            bottom: 5px;
+            }
+            .far{
+            font-size: 17px;
+            position: relative;
+            bottom: 5px;
+            }
+            .social-item{
+                width: 35px;
+                height: 30px;
+            }
+        }
+    }
+    //*********************************info*********************************************
+    section#info{
+    #container_info{
+        background-color: rgb(255, 255, 255);
+        height: 100%;
+        width: 100%;
+        } 
+    }
+    //*********************************skills******************************************
+    section#skills{
+        #container_skills{
+            height: 100%;
+            width: 100%;
+            } 
+     }
+    //*********************************projects*****************************************
+    section#projects{
+    #container_projects{
+        height: 100%;
+    .carousel-inner{
+    position: relative;
+    bottom: 47px;
+    height: 20rem;
+    width: 322px;
+    left: 93px;
+     }
+    #carouselExampleDark{
+        position: relative;
+        bottom: 2rem;
+    }
+    .carousel-indicators{
+        width: 30px;
+        position: relative;
+        right: 2.3rem;
+    }
+      .carousel-indicators{
+          position: relative;
+          top:17rem;
+      }
+      .carousel-control-next-icon{
+        position: relative;
+        bottom: 1.5rem;
+        left: 4.5rem;
+        height: 20px;
+      }
+      .carousel-control-prev-icon{
+        position: relative;
+        bottom: 1.5rem;
+        right: 4.5rem;
+        height: 20px;
+      }
+     } 
+    }
+    //*********************************services*****************************************
+    section#services{
+    #container_services{
+        height: 100%;
+    .fas , .fab{
+    font-size: 35px;
+    }
+    .card{
+    height: 50vh;
+    }
+    #btn_card{
+    margin-top: 3vh;
+    }
+    }
+    }
+    //*********************************call*****************************************
+    section#call{
+    #container_call{
+        height: 100%;
+        .card-body{
+         width: 89vw;  
+         h2{
+        font-size: 15px;
+        } 
+        p{
+        font-size: 15px;
+        }
+        .info{
+        position: relative;
+        top: 7vh
+        }
+        .caption{
+            font-size: 13px;
+            width: 50%;
+        }
+        .image-container img{
+            width: 44%;
+            height: 75%;
+        }
+        }
+        
+    }
+    }
+    //*********************************idea*****************************************
+    section#idea{
+    #container_idea{
+        width: 80%;
+        height: 100%;
+        h4 , p{
+            font-size: 16px;
+        }
+        #alert_idea{
+            position: relative;
+            height: 48vh;
+            right: 0.3vh;
+        }
+        .col-4{
+            width: 100%;
+        }
+        .form-control{
+            font-size: 10px;
+        }
+        .btn.btn-primary{
+            height: 5vh;
+            font-size: 12px;
+        }
+        #exampleFormControlTextarea1 {
+            height: 10vh;
+        }
+    }
+    }
+    //*********************************footer*****************************************
+    section#footer{
+    footer.bg-dark{
+        #container_footer{
+            height: 100%;
+        .fas{
+            font-size: 30px; 
+           }
+        }
+        p{
+            font-size: 16px;
+        }
+        .col-4{
+            width: 100%;
+        }
+        #myBtn{
+    display: none;
+            }
+    }
+    }
+}
+
+
+@media(min-width : 376px) and (max-width : 414px) {
+    section#index{
+        #container_index{
+            height: 100%;
+            #title-top{
+                font-size: 30px;
+            }
+           #title-org{
+                font-size: 19px;
+            }
+            .takhasos{
+                font-size: 15px;
+            }     
+            .ability-item{
+                font-size: 16px;
+            }
+            .fas{
+             display: none;
+            }
+            .fab{
+            font-size: 17px;
+            position: relative;
+            bottom: 5px;
+            }
+            .far{
+            font-size: 17px;
+            position: relative;
+            bottom: 5px;
+            }
+            .social-item{
+                width: 35px;
+                height: 30px;
+            }
+        }
+    }
+    //*********************************info*********************************************
+    section#info{
+    #container_info{
+        background-color: rgb(255, 255, 255);
+        height: 100%;
+        width: 100vw;
+        } 
+    }
+    //*********************************skills******************************************
+    section#skills{
+        #container_skills{
+            height: 100%;
+            width: 100vw;
+            } 
+     }
+    //*********************************projects*****************************************
+    section#projects{
+    #container_projects{
+        height: 100%;
+    .carousel-inner{
+        position: relative;
+        bottom: 47px;
+        height: 19rem;
+        width: 345px;
+        left: 93px;
+     }
+    #carouselExampleDark{
+        position: relative;
+        bottom: 2rem;
+    }
+    .carousel-indicators{
+        width: 30px;
+        position: relative;
+        right: 2.3rem;
+    }
+      .carousel-indicators{
+          position: relative;
+          top:17rem;
+      }
+      .carousel-control-next-icon{
+        position: relative;
+        bottom: 1.5rem;
+        left: 4.5rem;
+        height: 30px;
+      }
+      .carousel-control-prev-icon{
+        position: relative;
+        bottom: 1.5rem;
+        right: 4.5rem;
+        height: 30px;
+      }
+     } 
+    }
+    //*********************************services*****************************************
+    section#services{
+    #container_services{
+    height: 100%;
+    .fas , .fab{
+    font-size: 35px;
+    }
+    .card{
+    height: 46vh;
+    }
+    h5.card-title {
+        font-size: 20px;
+    }
+    #btn_card{
+    margin-top: 1vh;
+    }
+    }
+    }
+    //*********************************call*****************************************
+    section#call{
+    #container_call{
+        height: 100%;
+        .card-body{
+         width: 89vw;  
+         h2{
+        font-size: 19px;
+        position: relative;
+        bottom: 2rem;
+        } 
+        p{
+        font-size: 15px;
+        }
+        .info{
+        position: relative;
+        top: 7vh
+        }
+        .caption{
+            font-size: 15px;
+            width: 50%;
+        }
+        .image-container img{
+            width: 44%;
+            height: 75%;
+        }
+        }
+        
+    }
+    }
+    //*********************************idea*****************************************
+    section#idea{
+    #container_idea{
+        width: 80%;
+        height: 100%;
+        h4 , p{
+            font-size: 16px;
+        }
+        #alert_idea{
+            position: unset;
+            height: 48vh;
+        }
+        .col-4{
+            width: 100%;
+        }
+        .form-control{
+            font-size: 10px;
+        }
+        .btn.btn-primary{
+            height: 5vh;
+            font-size: 12px;
+        }
+        #exampleFormControlTextarea1 {
+            height: 100%;
+        }
+    }
+    }
+    //*********************************footer*****************************************
+    section#footer{
+    footer.bg-dark{
+        #container_footer{
+            height: 100%;
+        .fas{
+            font-size: 21px; 
+           }
+        }
+        p{
+            font-size: 19px;
+        }
+        .col-4{
+            width: 100%;
+        }
+        #myBtn{
+    display: none;
+            }
+    }
+    }
+}
+
+
+
+@media(min-width : 415px) and (max-width : 539px) {
+    section#index{
+        #container_index{
+            height: 100%;
+            #title-top{
+                font-size: 52px;
+            }
+           #title-org{
+                font-size: 30px;
+            }
+            .takhasos{
+                font-size: 30px;
+            }     
+            .ability-item{
+                font-size: 30px;
+            }
+            .fas{
+             display: none;
+            }
+            .fab{
+            font-size: 34px;
+            position: relative;
+            bottom: 0px;
+            }
+            .far{
+            font-size: 34px;
+            position: relative;
+            bottom: 0px;
+            }
+            .social-item{
+                width: 60px;
+                height: 60px;
+            }
+        }
+    }
+    //*********************************info*********************************************
+    section#info{
+    #container_info{
+        background-color: rgb(255, 255, 255);
+        height: 100%;
+        width: 100vw;
+        h2{
+            font-size: 50px;
+        }
+        p{
+            font-size: 30px;
+        }
+        .btn , .btn-outline-primary{
+        font-size: 30px;
+        }
+        .fas{
+            font-size: 40px;
+        }
+        h3{
+            font-size: 25px;
+        }
+        p{
+            font-size: 25px;
+        }
+        } 
+    }
+    //*********************************skills******************************************
+    section#skills{
+        #container_skills{
+            height: 100%;
+            width: 100vw;
+            h2{
+                font-size: 50px;
+            }
+            p{
+                font-size: 30px;
+            }
+            h5{
+                font-size: 40px;
+            }
+            } 
+     }
+    //*********************************projects*****************************************
+    section#projects{
+    #container_projects{
+        height: 100%;
+        h2{
+            font-size: 50px;
+        }
+        p{
+            font-size: 30px;
+        }
+    .carousel-inner{
+        position: relative;
+        bottom: 47px;
+        height: 100%;
+        width: 68vw;
+        left: 93px;
+     }
+    #carouselExampleDark{
+        position: relative;
+        bottom: 2rem;
+    }
+    .carousel-indicators{
+        width: 30px;
+        position: relative;
+        right: 2.3rem;
+    }
+      .carousel-indicators{
+          position: relative;
+          top:6rem;
+      }
+      .carousel-control-next-icon{
+        position: relative;
+        bottom: 1.5rem;
+        left: 4.5rem;
+        height: 50px;
+      }
+      .carousel-control-prev-icon{
+        position: relative;
+        bottom: 1.5rem;
+        right: 4.5rem;
+        height: 50px;
+      }
+     } 
+    }
+    //*********************************services*****************************************
+    section#services{
+    #container_services{
+    height: 100%;
+    h2{
+        font-size: 50px;
+    }
+    p{
+        font-size: 30px;
+    }
+    .fas , .fab{
+    font-size: 80px;
+    }
+    .card{
+    height: 46vh;
+    }
+    h5.card-title {
+        font-size: 30px;
+    }
+    .card-text {
+    height: 6rem;
+    font-size: 30px;
+    }
+    #btn_card{
+    margin-top: 8vh;
+    font-size: 30px;
+    }
+    }
+    }
+    //*********************************call*****************************************
+    section#call{
+    #container_call{
+        height: 100%;
+        h2{
+            font-size: 50px;
+        }
+        p{
+            font-size: 30px;
+        }
+        .card-body{
+            width: 93vw;
+            height: 44vh;
+            position: relative;
+            left: 146px;  
+         h2{
+        font-size: 34px;
+        } 
+        p{
+        font-size: 32px;
+        }
+        .info{
+        position: relative;
+        top: 7vh
+        }
+        .caption{
+            font-size: 22px;
+            width: 43%;
+        }
+        .image-container img{
+        width: 50%;
+        height: 80%;
+        position: absolute;
+        right: 21rem;
+        }
+        }
+        
+    }
+    }
+    //*********************************idea*****************************************
+    section#idea{
+    #container_idea{
+        width: 80%;
+        height: 100%;
+        h4 , p{
+            font-size: 25px;
+        }
+        #alert_idea{
+            position: unset;
+            height: 60vh;
+        }
+        .col-4{
+            width: 100%;
+        }
+        .form-control{
+            font-size: 21px;
+        }
+        .btn.btn-primary{
+            height: 5vh;
+            font-size: 12px;
+        }
+        #exampleFormControlTextarea1 {
+            height: 26vh;
+        }
+    }
+    }
+    //*********************************footer*****************************************
+    section#footer{
+    footer.bg-dark{
+        #container_footer{
+            height: 100%;
+        .fas{
+            font-size: 35px; 
+           }
+        }
+        p{
+            font-size: 30px;
+        }
+        .col-4{
+            width: 100%;
+        }
+        .btn{
+            font-size: 25px;
+        }
+        #myBtn{
+       display: none;
+            }
+    }
+    }
+}
+
+
+
+@media(min-width : 540px) and (max-width : 767px) {
+    section#index{
+        #container_index{
+            height: 100%;
+            #title-top{
+                font-size: 36px;
+            }
+           #title-org{
+               margin-top: 3rem;
+                font-size: 25px;
+            }
+            .takhasos{
+                font-size: 20px;
+            }     
+            .ability-item{
+                font-size: 20px;
+            }
+            .fas{
+             display: none;
+            }
+            .fab{
+            font-size: 25px;
+            position: relative;
+            bottom: 0px;
+            }
+            .far{
+            font-size: 25px;
+            position: relative;
+            bottom: 0px;
+            }
+            .social-item{
+                width: 60px;
+                height: 60px;
+            }
+            .mb-5 {
+                margin-bottom: 0rem !important;
+            }
+        }
+    }
+    //*********************************info*********************************************
+    section#info{
+    #container_info{
+        background-color: rgb(255, 255, 255);
+        height: 100%;
+        width: 100vw;
+        h2{
+            font-size: 38px;
+        }
+        p{
+            font-size: 20px;
+        }
+        .btn , .btn-outline-primary{
+        font-size: 30px;
+        }
+        .fas{
+            font-size: 40px;
+        }
+        h3{
+            font-size: 25px;
+        }
+        } 
+    }
+    //*********************************skills******************************************
+    section#skills{
+        #container_skills{
+            height: 100%;
+            width: 100vw;
+            h2{
+                font-size: 38px;
+            }
+            p{
+                font-size: 25px;
+            }
+            h5{
+                font-size: 30px;
+            }
+            } 
+     }
+    //*********************************projects*****************************************
+    section#projects{
+    #container_projects{
+        height: 100%;
+        h2{
+            font-size: 38px;
+        }
+        p{
+            font-size: 23px;
+        }
+    .carousel-inner{
+    position: relative;
+    bottom: 47px;
+    height: 100%;
+    width: 92vw;
+    left: 136px;
+     }
+    #carouselExampleDark{
+        position: relative;
+        bottom: 2rem;
+    }
+    .carousel-indicators{
+        width: 70px;
+        position: relative;
+        right: 2.5rem;
+        top:17rem;
+    }
+      .carousel-control-next-icon{
+        position: relative;
+        bottom: 1.5rem;
+        left: 7.5rem;
+        height: 50px;
+      }
+      .carousel-control-prev-icon{
+        position: relative;
+        bottom: 1.5rem;
+        right: 7.5rem;
+        height: 50px;
+      }
+     } 
+    }
+    //*********************************services*****************************************
+    section#services{
+    #container_services{
+    height: 100%;
+    h2{
+        font-size: 38px;
+    }
+    p{
+        font-size: 25px;
+    }
+    .fas , .fab{
+    font-size: 55px;
+    }
+    .card{
+    height: 65vh;
+    }
+    h5.card-title {
+        font-size: 30px;
+    }
+    .card-text {
+    height: 6rem;
+    font-size: 24px;
+    }
+    #btn_card{
+    margin-top: 15vh;
+    font-size: 30px;
+    }
+    }
+    }
+    //*********************************call*****************************************
+    section#call{
+    #container_call{
+        height: 100%;
+        h2{
+            font-size: 25px;
+        }
+        p{
+            font-size: 16px;
+        }
+        .card-body{
+        width: 91vw;
+        height: 100%;
+        position: relative;
+        right: 0.2rem; 
+        p{
+        font-size: 16px;
+        }
+        .info{
+            h2{
+            font-size: 30px;
+            }
+            p{
+            font-size: 20px;
+            }
+        position: relative;
+        top: 7vh
+        }
+        .caption{
+            font-size: 16px;
+            width: 36%;
+        }
+        .image-container img{
+            width: 50%;
+            height: 61%;
+            position: absolute;
+            right: 14rem;
+            top: 12vh;
+        }
+        }
+        
+    }
+    }
+    //*********************************idea*****************************************
+    section#idea{
+    #container_idea{
+        width: 80%;
+        height: 100%;
+        h4 , p{
+            font-size: 28px;
+        }
+        #alert_idea{
+            position: unset;
+            height: 74vh;
+        }
+        .col-4{
+            width: 100%;
+        }
+        .form-control{
+            font-size: 21px;
+        }
+        .btn.btn-primary{
+            height: 7vh;
+            font-size: 18px;
+        }
+        #exampleFormControlTextarea1 {
+            height: 26vh;
+        }
+    }
+    }
+    //*********************************footer*****************************************
+    section#footer{
+    footer.bg-dark{
+        #container_footer{
+            height: 100%;
+        .fas{
+            font-size: 30px; 
+           }
+        }
+        p{
+            font-size: 21px;
+        }
+        .col-4{
+            width: 100%;
+        }
+        .btn{
+            font-size: 25px;
+        }
+        #myBtn{
+       display: none;
+            }
+    }
+    }
+}
+
+
+
+
+@media(min-width : 768px) and (max-width : 790px) {
+    section#index{
+        #container_index{
+            height: 100%;
+            #title-top{
+                font-size: 40px;
+            }
+           #title-org{
+                font-size: 35px;
+            }
+            .takhasos{
+                font-size: 35px;
+            }     
+            .ability-item{
+                font-size: 35px;
+            }
+            .fas{
+             display: none;
+            }
+            .fab{
+            font-size: 25px;
+            position: relative;
+            bottom: 0px;
+            }
+            .far{
+            font-size: 25px;
+            position: relative;
+            bottom: 0px;
+            }
+            .social-item{
+                width: 60px;
+                height: 60px;
+            }
+        }
+    }
+    //*********************************info*********************************************
+    section#info{
+    #container_info{
+        background-color: rgb(255, 255, 255);
+        height: 100%;
+        width: 100vw;
+        h2{
+            font-size: 38px;
+        }
+        p{
+            font-size: 20px;
+        }
+        .btn , .btn-outline-primary{
+        font-size: 30px;
+        }
+        .fas{
+            font-size: 40px;
+        }
+        h3{
+            font-size: 25px;
+        }
+        } 
+    }
+    //*********************************skills******************************************
+    section#skills{
+        #container_skills{
+            height: 100%;
+            width: 100vw;
+            h2{
+                font-size: 38px;
+            }
+            p{
+                font-size: 25px;
+            }
+            h5{
+                font-size: 30px;
+            }
+            } 
+     }
+    //*********************************projects*****************************************
+    section#projects{
+    #container_projects{
+        height: 100%;
+        h2{
+            font-size: 38px;
+        }
+        p{
+            font-size: 23px;
+        }
+    .carousel-inner{
+    position: relative;
+    bottom: 47px;
+    height: 100%;
+    width: 92vw;
+    left: 184px;
+     }
+    #carouselExampleDark{
+        position: relative;
+        bottom: 2rem;
+    }
+    .carousel-indicators{
+    width: 95px;
+    position: relative;
+    right: 4.5rem;
+    top: 17rem;
+    }
+      .carousel-control-next-icon{
+        position: relative;
+        bottom: 1.5rem;
+        left: 10.5rem;
+        height: 50px;
+      }
+      .carousel-control-prev-icon{
+        position: relative;
+        bottom: 1.5rem;
+        right: 10.5rem;
+        height: 50px;
+      }
+     } 
+    }
+    //*********************************services*****************************************
+    section#services{
+    #container_services{
+    height: 100%;
+    h2{
+        font-size: 38px;
+    }
+    p{
+        font-size: 25px;
+    }
+    .fas , .fab{
+    font-size: 64px;
+    }
+    .card{
+    height: 65vh;
+    }
+    h5.card-title {
+        font-size: 36px;
+    }
+    .card-text {
+    height: 6rem;
+    font-size: 38px;
+    }
+    #btn_card{
+    margin-top: 29vh;
+    font-size: 30px;
+    }
+    }
+    }
+    //*********************************call*****************************************
+    section#call{
+    #container_call{
+        height: 100%;
+        h2{
+            font-size: 38px;
+        }
+        p{
+            font-size: 25px;
+        }
+        .card-body{
+            width: 94vw;
+            height: 100%;
+            position: relative;
+            left: 9.2rem;  
+        p{
+        font-size: 32px;
+        }
+        .info{
+            h2{
+            font-size: 40px;
+            }
+            p{
+            font-size: 32px;
+            }
+        position: relative;
+        top: 7vh
+        }
+        .caption{
+            font-size: 32px;
+            width: 36%;
+        }
+        .image-container img{
+            width: 50%;
+            height: 61%;
+            position: absolute;
+            right: 20rem;
+            top: 6vh;
+        }
+        }
+        
+    }
+    }
+    //*********************************idea*****************************************
+    section#idea{
+    #container_idea{
+        width: 80%;
+        height: 100%;
+        h4 , p{
+            font-size: 28px;
+        }
+        #alert_idea{
+            position: unset;
+            height: 70vh;
+        }
+        .col-4{
+            width: 100%;
+        }
+        .form-control{
+            font-size: 21px;
+        }
+        .btn.btn-primary{
+            height: 5vh;
+            font-size: 24px;
+        }
+        #exampleFormControlTextarea1 {
+            height: 26vh;
+        }
+    }
+    }
+    //*********************************footer*****************************************
+    section#footer{
+    footer.bg-dark{
+        #container_footer{
+            height: 100%;
+        .fas{
+            font-size: 40px; 
+           }
+        }
+        p{
+            font-size: 35px;
+        }
+        .col-4{
+            width: 100%;
+        }
+        .btn{
+            font-size: 25px;
+        }
+        #myBtn{
+       display: none;
+            }
+    }
+    }
+}
+
+
+
+
+@media(min-width : 791px) and (max-width : 832px) {
+    section#index{
+        #container_index{
+            height: 100%;
+            #title-top{
+                font-size: 30px;
+            }
+           #title-org{
+                font-size: 19px;
+            }
+            .takhasos{
+                font-size: 15px;
+            }     
+            .ability-item{
+                font-size: 16px;
+            }
+            .fas{
+             display: none;
+            }
+            .fab{
+            font-size: 17px;
+            position: relative;
+            bottom: 5px;
+            }
+            .far{
+            font-size: 17px;
+            position: relative;
+            bottom: 5px;
+            }
+            .social-item{
+                width: 35px;
+                height: 30px;
+            }
+        }
+    }
+    //*********************************info*********************************************
+    section#info{
+    #container_info{
+        background-color: rgb(255, 255, 255);
+        height: 100%;
+        width: 100vw;
+        } 
+    }
+    //*********************************skills******************************************
+    section#skills{
+        #container_skills{
+            height: 100%;
+            width: 100vw;
+            } 
+     }
+    //*********************************projects*****************************************
+    section#projects{
+    #container_projects{
+    height: 100%;
+    .carousel-inner{
+    position: relative;
+    bottom: 53px;
+    height: 15rem;
+    width: 24.2rem;
+    left: 114px;
+     }
+    #carouselExampleDark{
+    position: relative;
+    bottom: 2rem;
+    }
+    .carousel-indicators{
+    width: 30px;
+    position: relative;
+    right: 2.3rem;
+    }
+    .carousel-indicators{
+    position: relative;
+    top:4rem;
+    }
+    .carousel-control-next-icon{
+    position: relative;
+    bottom: 1.5rem;
+    left: 4.5rem;
+    height: 10px;
+    }
+    .carousel-control-prev-icon{
+    position: relative;
+    bottom: 1.5rem;
+    right: 4.5rem;
+    height: 10px;
+      }
+     } 
+    }
+    //*********************************services*****************************************
+    section#services{
+    #container_services{
+        height: 100%;
+    #btn_card {
+     margin-top: 6vh;
+    }
+    .fas , .fab{
+    font-size: 35px;
+    }
+    .card{
+    height: 42vh;
+    }
+    .card-text{
+        height: 4rem;
+    }
+    }
+    }
+    //*********************************call*****************************************
+    section#call{
+    #container_call{
+        height: 100%;
+    .card{
+        .shadow{
+        display: none;
+        }
+    }
+        .card-body{
+        width: 91vw;
+        position: relative;
+        left: 0rem 
+         h2{
+        font-size: 16x;
+        } 
+        p{
+        font-size: 15px;
+        }
+        .info{
+        position: relative;
+        top: 7vh
+        }
+        .caption{
+        font-size: 15px;
+        width: 50%;
+        }
+        .image-container img{
+        width: 44%;
+        height: 75%;
+        position: absolute;
+        right: 12rem;
+        }
+        }
+        
+    }
+    }
+    //*********************************idea*****************************************
+    section#idea{
+    #container_idea{
+        width: 80%;
+        height: 100%;
+        h4 , p{
+            font-size: 18px;
+        }
+        #alert_idea{
+        position: relative;
+        left: 3rem;
+        height: 100%;
+        width: 94vw;
+        }
+        .col-4{
+            width: 100%;
+        }
+        .form-control{
+            font-size: 10px;
+        }
+        .btn.btn-primary{
+            height: 4vh;
+            font-size: 12px;
+        }
+        #exampleFormControlTextarea1 {
+            height: 21vh;
+        }
+    }
+    }
+    //*********************************footer*****************************************
+    section#footer{
+    footer.bg-dark{
+        #container_footer{
+            height: 100%;
+        .fas{
+            font-size: 30px; 
+           }
+        }
+        p{
+            font-size: 18px;
+        }
+        .col-4{
+            width: 100%;
+        }
+        #myBtn{
+        display: none;
+            }
+    }
+    }
+}
+
+
+
+@media(min-width : 833px) and (max-width : 1024px)  {
+    section#index{
+        #container_index{
+            height: 100%;
+            #title-t {
+                border:0;
+            }
+            #title-top{
+                font-size: 60px;
+            }
+           #title-org{
+                font-size: 45px;
+            }
+            .takhasos{
+                font-size: 40px;
+            }     
+            .ability-item{
+                font-size: 40px;
+            }
+            .fas{
+             display: none;
+            }
+            .fab{
+            font-size: 45px;
+            position: relative;
+            bottom: 1px;
+            }
+            .far{
+            font-size: 45px;
+            position: relative;
+            bottom: 1px;
+            }
+            .social-item{
+                width: 35px;
+                height: 30px;
+            }
+        }
+    }
+    //*********************************info*********************************************
+    section#info{
+    #container_info{
+        height: 100%;
+        .btn{
+                font-size: 2rem;
+        }
+        h2{
+            font-size: 50px;
+        }
+        p{
+            font-size: 30px;
+        }
+        background-color: rgb(255, 255, 255);
+        width: 100vw;
+        } 
+    }
+    //*********************************skills******************************************
+    section#skills{
+        #container_skills{
+            height: 100%;
+            h2{
+                font-size: 50px;
+            }
+            p{
+                font-size: 30px;
+            }
+            h5{
+                font-size: 30px;
+            }
+            width: 100vw;
+            } 
+     }
+    //*********************************projects*****************************************
+    section#projects{
+    #container_projects{
+        height: 100%;
+        h2{
+            font-size: 50px;
+        }
+        p{
+            font-size: 30px;
+        }
+        height: 36vh;
+    .carousel-inner{
+        position: relative;
+        bottom: 53px;
+        height: 19rem;
+        width: 53rem;
+        left: 187px;
+     }
+    #carouselExampleDark{
+        position: relative;
+        bottom: 2rem;
+    }
+    .carousel-indicators{
+        width: 85px;
+        position: relative;
+        right: 2.3rem;
+    }
+      .carousel-indicators{
+        position: relative;
+        top: 16rem;
+        right: 8rem;
+      }
+      .carousel-control-next-icon{
+        position: relative;
+        bottom: 1.5rem;
+        left: 10.5rem;
+        height: 36px;
+      }
+      .carousel-control-prev-icon{
+        position: relative;
+        bottom: 1.5rem;
+        right: 10.5rem;
+        height: 36px;
+      }
+     } 
+    }
+    //*********************************services*****************************************
+    section#services{
+    #container_services{
+        height: 100%;
+        h2{
+            font-size: 50px;
+        }
+        p{
+            font-size: 30px;
+        }
+    #btn_card {
+     margin-top: 6vh;
+    }
+    .fas , .fab{
+    font-size: 73px;
+    }
+    h5.card-title {
+        font-size: 35px;
+    }
+    .card{
+    height: 43vh;
+    }
+    .card-text{
+        height: 13rem;
+        font-size: 32px;
+    }
+    .btn{
+font-size: 2rem;
+    }
+        
+    }
+    }
+    //*********************************call*****************************************
+    section#call{
+    #container_call{
+        height: 100%;
+        h2{
+            font-size: 50px;
+        }
+        p{
+            font-size: 30px;
+        }
+        .row.clr{
+            display: unset;
+        }
+        .card-body{
+         width: 96vw;
+         height: 40vh; 
+         h2{
+        font-size: 40px;
+        } 
+        p{
+        font-size: 15px;
+        }
+        .info{
+        position: relative;
+        top: 7vh
+        }
+        .caption{
+            font-size: 30px;
+            width: 50%;
+        }
+        .image-container img{
+        width: 75%;
+        height: 84%;
+        position: absolute;
+        bottom: 8%;
+        right: 93%;
+        }
+        }
+  
+        
+    }
+    }
+    //*********************************idea*****************************************
+    section#idea{
+    #container_idea{
+        width: 100%;
+        height: 100%;
+        h4 {
+            font-size: 33px;
+        }
+        h2{
+            font-size: 50px;
+        }
+        p{
+            font-size: 30px;
+        }
+        #alert_idea {
+            position: relative;
+            height: 57vh;
+            width: 94vw;
+            right: 0.7rem;
+        }
+        .col-4{
+            width: 100%;
+        }
+        .form-control{
+            font-size: 33px;
+        }
+        .btn.btn-primary{
+            height: 4vh;
+            font-size: 28px;
+        }
+        #exampleFormControlTextarea1 {
+            height: 25vh;
+        }
+    }
+    }
+    //*********************************footer*****************************************
+    section#footer{
+    footer.bg-dark{
+        #container_footer{
+            height: 100%;
+        .fas{
+            font-size: 35px; 
+           }
+        }
+        h2{
+            font-size: 50px;
+        }
+        p{
+            font-size: 35px;
+        }
+        .col-4{
+            width: 100%;
+        }
+        #myBtn{
+         display: none;
+            }
+    }
+    }
+}
+
+///////////////////////////////////////////resume.html/////////////////////////////////////
+@media(max-width : 320px) {
+header .search{
+position: absolute;
+top: 22%;
+left: 3%;
+&:hover{
+width: 175px;
+}
+}
+header .search .search-txt {
+position: relative;
+right: 10px;
+bottom: 5px;
+border: none;
+background: none;
+outline: none;
+float: left;
+padding: 0;
+font-size: 14px;
+color: #7f8fa6;
+transition: 200ms;
+line-height: 27px;
+width: 0px;
+direction: rtl;
+font-family: Vazir;
+padding-right: 10px;
+font-weight: bold;
+}
+section#resume{
+#container_resume {
+    height: 100%;
+.col-6{
+width: 100%;
+}
+.card{
+width: auto;
+} 
+}
+}
+}
+
+
+@media(min-width : 321px) and (max-width : 767px) {
+    header .search{
+    position: absolute;
+    top: 22%;
+    left: 5%;
+    &:hover{
+    width: 175px;
+    }
+    }
+    header .search .search-txt {
+    position: relative;
+    right: 10px;
+    bottom: 5px;
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    font-size: 14px;
+    color: #7f8fa6;
+    transition: 200ms;
+    line-height: 27px;
+    width: 0px;
+    direction: rtl;
+    font-family: Vazir;
+    padding-right: 10px;
+    font-weight: bold;
+    }
+    section#resume{
+    #container_resume {
+        height: 100%;
+    .col-6{
+    width: 100%;
+    }
+    .card{
+    width: auto;
+    } 
+    }
+    }
+}
+
+
+@media(min-width : 768px) and (max-width : 832px) {
+    header .search{
+    position: absolute;
+    top: 22%;
+    left: 5%;
+    &:hover{
+    width: 175px;
+    }
+    }
+    header .search .search-txt {
+    position: relative;
+    right: 10px;
+    bottom: 5px;
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    font-size: 14px;
+    color: #7f8fa6;
+    transition: 200ms;
+    line-height: 27px;
+    width: 0px;
+    direction: rtl;
+    font-family: Vazir;
+    padding-right: 10px;
+    font-weight: bold;
+    }
+    section#resume{
+    #container_resume {
+        height: 100%;
+    .col-6{
+    width: 100%;
+    }
+    .card{
+    width: auto;
+    } 
+    }
+    }
+}
+
+
+@media(min-width : 833px) and (max-width : 1024px)  {
+    header .search{
+    position: absolute;
+    top: 37%;
+    left: 1%;
+    &:hover{
+    width: 148px;
+    }
+    }
+    header .search .search-txt {
+    position: relative;
+    right: 35px;
+    bottom: 5px;
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    font-size: 14px;
+    color: #7f8fa6;
+    transition: 200ms;
+    line-height: 27px;
+    width: 0px;
+    direction: rtl;
+    font-family: Vazir;
+    padding-right: 10px;
+    font-weight: bold;
+    }
+    section#resume{
+    #container_resume {
+        height: 100%;
+    .card{
+        height: 23rem;
+    }
+    span{
+        font-size: 40px;
+    }
+    h5{
+        font-size: 35px;
+    }
+    p{
+        font-size: 30px;
+    }
+    }
+    }
+}
+
+///////////////////////////////////////////See_More.html/////////////////////////////////////
+    
+@media(max-width : 320px) {
+    header .search{
+    position: absolute;
+    top: 22%;
+    left: 3%;
+    &:hover{
+    width: 175px;
+    }
+    }
+    header .search .search-txt {
+    position: relative;
+    right: 10px;
+    bottom: 5px;
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    font-size: 14px;
+    color: #7f8fa6;
+    transition: 200ms;
+    line-height: 27px;
+    width: 0px;
+    direction: rtl;
+    font-family: Vazir;
+    padding-right: 10px;
+    font-weight: bold;
+    }
+section#See_More{
+.container.portfolio {
+    height: 100%;
+    .font-weight-bold {
+        font-size: 10px;
+    }
+span{
+    font-size: 10px;
+
+}
+.mx-4 {
+    margin-right: 0.5rem !important;
+    margin-left: 0.5rem !important;
+}
+.grid-item{
+    width: 100%;
+}
+}
+}
+}
+
+
+@media(min-width : 320px) and (max-width : 832px) {
+    header .search{
+    position: absolute;
+    top: 22%;
+    left: 3%;
+    &:hover{
+    width: 175px;
+    }
+    }
+    header .search .search-txt {
+    position: relative;
+    right: 10px;
+    bottom: 5px;
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    font-size: 14px;
+    color: #7f8fa6;
+    transition: 200ms;
+    line-height: 27px;
+    width: 0px;
+    direction: rtl;
+    font-family: Vazir;
+    padding-right: 10px;
+    font-weight: bold;
+    }
+section#See_More{
+.container.portfolio {
+    height: 100%;
+    .font-weight-bold {
+        font-size: 12px;
+    }
+span{
+    font-size: 12px;
+
+}
+.mx-4 {
+    margin-right: 0.5rem !important;
+    margin-left: 0.5rem !important;
+}
+.grid-item{
+    width: 100%;
+}
+}
+}
+}
+
+
+
+@media(min-width : 832px) and (max-width : 1024px){
+    header .search{
+    position: absolute;
+    top: 37%;
+    left: 1%;
+    &:hover{
+    width: 148px;
+    }
+    }
+    header .search .search-txt {
+    position: relative;
+    right: 35px;
+    bottom: 5px;
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    font-size: 10px;
+    color: #7f8fa6;
+    transition: 200ms;
+    line-height: 27px;
+    width: 0px;
+    direction: rtl;
+    font-family: Vazir;
+    padding-right: 10px;
+    font-weight: bold;
+    }
+section#See_More{
+.container.portfolio {
+    height: 100%;
+    .font-weight-bold {
+        font-size: 22px;
+    }
+span{
+    font-size: 22px;
+
+}
+.mx-4 {
+    margin-right: 0.5rem !important;
+    margin-left: 0.5rem !important;
+}
+.grid-item{
+    width: 100%;
+}
+}
+}
+}
+
+
+
+
