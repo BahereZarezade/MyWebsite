@@ -23,7 +23,7 @@ function topFunction() {
 /////////////////////////////////////searchbox/////////////////////////////////////////////////////
 
 /////////////////////////////////////swiper_services///////////////////////////////////////////////
-if (window.matchMedia("(min-width: 270px) and (max-width: 768px)").matches) {
+if (window.matchMedia("(min-width: 250px) and (max-width: 768px)").matches) {
 	/* حداقل عرض 400 پیسکل می باشد */
 	new Swiper(".services .swiper-container", {
 		loop: true,

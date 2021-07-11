@@ -440,6 +440,7 @@ section#See_More .container.portfolio .filters span {
 }
 section#See_More .container.portfolio .grid-item img {
   width: 100%;
+  cursor: pointer;
 }
 section#See_More .container.portfolio .font-weight-bold {
   font-size: 18px;

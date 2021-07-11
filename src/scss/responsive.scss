@@ -5,15 +5,48 @@
 
 
 //*********************************index.html*****************************************
-@media(max-width : 320px) {
-    header .search{
-    position: absolute;
-    top: 22%;
-    left: 3%;
-    &:hover{
-        width: 175px;
+@media(min-width : 250px) and (max-width : 270px) {
+    header .search{   
+        display: inline-block;
+        position: absolute;
+        top: 20%;
+        left: 12%;
+        height: 30px;
+        width: 30px;
+        box-sizing: border-box;
+        margin: 0px 8px 7px 0px;
+        padding: 7px 9px 0px 9px;
+        border: 3px solid #FFFFFF;
+        border-radius: 25px;
+        transition: all 200ms ease;
+        cursor: text;
+        &:after {
+        content: "";
+        position: absolute;
+        width: 3px;
+        height: 17px;
+        right: -5px;
+        top: 17px;
+        background: #FFFFFF;
+        border-radius: 3px;
+        transform: rotate(-45deg);
+        transition: all 200ms ease;
+        ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+            font-size: 5px;
+          }
+    } 
+    &.active,
+    &:hover {
+        width: 158px;
+    .search-txt{
+        width: 140px;
     }
+    &:after {
+        height: 0px;  
+         width: 0;
     }
+}
+}
     header .search .search-txt {
         position: relative;
         right: 10px;
@@ -35,12 +68,17 @@
     }
     section#index{
         #container_index{
+            .mb-5 {
+            margin-bottom: 0rem !important;
+            }
             height: 100%;
             #title-top{
                 font-size: 30px;
+                position: relative;
+                bottom: 41px;
             }
            #title-org{
-                font-size: 15px;
+                font-size: 13px;
             }
             .takhasos{
                 font-size: 15px;
@@ -90,7 +128,7 @@
         position: relative;
         bottom: 47px;
         height: 21rem;
-        width: 15.6rem;
+        width: 14.69rem;
         left: 78px;
      }
     #carouselExampleDark{
@@ -128,11 +166,15 @@
     font-size: 35px;
     }
     .card{
-    height: 56vh;
+    height: 77vh;
+    }
+    .card-text {
+    height: 6rem;
+    font-size: 13px;
     }
     #btn_card{
-    height: 6vh;
-    margin-top: 7vh;
+    height: 8vh;
+    margin-top: 20vh;
     font-size: 12px;
     }
     }
@@ -143,12 +185,17 @@
         height: 100%;
         .card-body{
          width: 87vw;  
-         height: 17rem;
+         height: 40rem;
          h2{
         font-size: 16px;
+        position: absolute;
+        top: 22rem;
         } 
         p{
-        font-size: 13px;
+        font-size: 15px;
+        width: 15rem;
+        position: absolute;
+        top: 24rem;
         }
         .info{
         position: relative;
@@ -156,15 +203,17 @@
         }
         .caption{
             font-size: 13px;
-            width: 50%;
+            width: 100%;
             position: absolute;
-            top: 10vh;
+            top: 73vh;
+            right: 1rem;
         }
         .image-container img{
-            width: 49%;
-            height: 54%;
             position: absolute;
-            top: 35px;
+            right: 17px;
+            width: 100%;
+            height: 54%;
+            top: 1rem;
         }
         }
         
@@ -221,7 +270,538 @@
     }
 }
 
-@media(min-width : 321px) and (max-width : 359px) {
+@media(min-width : 271px) and (max-width : 300px) {
+    header .search{   
+        display: inline-block;
+        position: absolute;
+        top: 20%;
+        left: 12%;
+        height: 30px;
+        width: 30px;
+        box-sizing: border-box;
+        margin: 0px 8px 7px 0px;
+        padding: 7px 9px 0px 9px;
+        border: 3px solid #FFFFFF;
+        border-radius: 25px;
+        transition: all 200ms ease;
+        cursor: text;
+        &:after {
+        content: "";
+        position: absolute;
+        width: 3px;
+        height: 17px;
+        right: -5px;
+        top: 17px;
+        background: #FFFFFF;
+        border-radius: 3px;
+        transform: rotate(-45deg);
+        transition: all 200ms ease;
+        ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+            font-size: 5px;
+          }
+    } 
+    &.active,
+    &:hover {
+        width: 158px;
+    .search-txt{
+        width: 140px;
+    }
+    &:after {
+        height: 0px;  
+         width: 0;
+    }
+}
+}
+    header .search .search-txt {
+        position: relative;
+        right: 10px;
+        bottom: 5px;
+        border: none;
+        background: none;
+        outline: none;
+        float: left;
+        padding: 0;
+        font-size: 14px;
+        color: #7f8fa6;
+        transition: 200ms;
+        line-height: 27px;
+        width: 0px;
+        direction: rtl;
+        font-family: Vazir;
+        padding-right: 10px;
+        font-weight: bold;
+    }
+    section#index{
+        #container_index{
+            .mb-5 {
+            margin-bottom: 0rem !important;
+            }
+            height: 100%;
+            #title-top{
+                font-size: 30px;
+                position: relative;
+                bottom: 41px;
+            }
+           #title-org{
+                font-size: 13px;
+            }
+            .takhasos{
+                font-size: 15px;
+            }     
+            .ability-item{
+                font-size: 16px;
+            }
+            .fas{
+             display: none;
+            }
+            .fab{
+            font-size: 17px;
+            position: relative;
+            bottom: 5px;
+            }
+            .far{
+            font-size: 17px;
+            position: relative;
+            bottom: 5px;
+            }
+            .social-item{
+                width: 32px;
+                height: 30px;
+            }
+        }
+    }
+    //*********************************info*********************************************
+    section#info{
+    #container_info{
+        background-color: rgb(255, 255, 255);
+        height: 100%;
+        width: 100vw;
+        } 
+    }
+    //*********************************skills******************************************
+    section#skills{
+        #container_skills{
+            height: 100%;
+            width: 100vw;
+            } 
+     }
+    //*********************************projects*****************************************
+    section#projects{
+    #container_projects{
+        height: 100%;
+    .carousel-inner{
+        position: relative;
+        bottom: 47px;
+        height: 21rem;
+        width: 15.69rem;
+        left: 78px;
+     }
+    #carouselExampleDark{
+        position: relative;
+        bottom: 2rem;
+    }
+    .carousel-indicators{
+        width: 30px;
+        position: relative;
+        right: 1.3rem;
+    }
+      .carousel-indicators{
+          position: relative;
+          top:17rem;
+      }
+      .carousel-control-next-icon{
+        position: relative;
+        bottom: 1.5rem;
+        left: 3.5rem;
+        height: 26px;
+      }
+      .carousel-control-prev-icon{
+        position: relative;
+        bottom: 1.5rem;
+        right: 3.8rem;
+        height: 26px;
+      }
+     } 
+    }
+    //*********************************services*****************************************
+    section#services{
+    #container_services{
+    height: 100%;
+    .fas , .fab{
+    font-size: 35px;
+    }
+    .card{
+    height: 77vh;
+    }
+    .card-text {
+    height: 6rem;
+    font-size: 13px;
+    }
+    #btn_card{
+    height: 8vh;
+    margin-top: 20vh;
+    font-size: 12px;
+    }
+    }
+    }
+    //*********************************call*****************************************
+    section#call{
+    #container_call{
+        height: 100%;
+        .card-body{
+         width: 87vw;  
+         height: 40rem;
+         h2{
+        font-size: 16px;
+        position: absolute;
+        top: 22rem;
+        } 
+        p{
+        font-size: 15px;
+        width: 15rem;
+        position: absolute;
+        top: 24rem;
+        }
+        .info{
+        position: relative;
+        top: 3vh
+        }
+        .caption{
+            font-size: 13px;
+            width: 100%;
+            position: absolute;
+            top: 73vh;
+            right: 1rem;
+        }
+        .image-container img{
+            position: absolute;
+            right: 17px;
+            width: 100%;
+            height: 54%;
+            top: 1rem;
+        }
+        }
+        
+    }
+    }
+    //*********************************idea*****************************************
+    section#idea{
+    #container_idea{
+        width: 80%;
+        height: 100%;
+        h4 , p{
+            font-size: 16px;
+        }
+        #alert_idea{
+            position: relative;
+            left: 33px;
+            height: 58vh;
+            width: 89vw;
+        }
+        .col-4{
+            width: 100%;
+        }
+        .form-control{
+            font-size: 10px;
+        }
+        .btn.btn-primary{
+            height: 5vh;
+            font-size: 12px;
+        }
+        #exampleFormControlTextarea1 {
+            height: 15vh;
+        }
+    }
+    }
+    //*********************************footer*****************************************
+    section#footer{
+    footer.bg-dark{
+        #container_footer{
+            height: 100%;
+        .fas{
+            font-size: 12px; 
+           }
+        }
+        p{
+            font-size: 16px;
+        }
+        .col-4{
+            width: 100%;
+        }
+        #myBtn{
+    display: none;
+            }
+    }
+    }
+}
+
+@media(min-width : 301px) and (max-width : 320px) {
+    header .search{   
+        display: inline-block;
+        position: absolute;
+        top: 20%;
+        left: 12%;
+        height: 30px;
+        width: 30px;
+        box-sizing: border-box;
+        margin: 0px 8px 7px 0px;
+        padding: 7px 9px 0px 9px;
+        border: 3px solid #FFFFFF;
+        border-radius: 25px;
+        transition: all 200ms ease;
+        cursor: text;
+        &:after {
+        content: "";
+        position: absolute;
+        width: 3px;
+        height: 17px;
+        right: -5px;
+        top: 17px;
+        background: #FFFFFF;
+        border-radius: 3px;
+        transform: rotate(-45deg);
+        transition: all 200ms ease;
+        ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+            font-size: 5px;
+          }
+    } 
+    &.active,
+    &:hover {
+        width: 158px;
+    .search-txt{
+        width: 140px;
+    }
+    &:after {
+        height: 0px;  
+         width: 0;
+    }
+}
+}
+    header .search .search-txt {
+        position: relative;
+        right: 10px;
+        bottom: 5px;
+        border: none;
+        background: none;
+        outline: none;
+        float: left;
+        padding: 0;
+        font-size: 14px;
+        color: #7f8fa6;
+        transition: 200ms;
+        line-height: 27px;
+        width: 0px;
+        direction: rtl;
+        font-family: Vazir;
+        padding-right: 10px;
+        font-weight: bold;
+    }
+    section#index{
+        #container_index{
+            .mb-5 {
+            margin-bottom: 0rem !important;
+            }
+            height: 100%;
+            #title-top{
+                font-size: 30px;
+                position: relative;
+                bottom: 41px;
+            }
+           #title-org{
+                font-size: 13px;
+            }
+            .takhasos{
+                font-size: 15px;
+            }     
+            .ability-item{
+                font-size: 16px;
+            }
+            .fas{
+             display: none;
+            }
+            .fab{
+            font-size: 17px;
+            position: relative;
+            bottom: 5px;
+            }
+            .far{
+            font-size: 17px;
+            position: relative;
+            bottom: 5px;
+            }
+            .social-item{
+                width: 32px;
+                height: 30px;
+            }
+        }
+    }
+    //*********************************info*********************************************
+    section#info{
+    #container_info{
+        background-color: rgb(255, 255, 255);
+        height: 100%;
+        width: 100vw;
+        } 
+    }
+    //*********************************skills******************************************
+    section#skills{
+        #container_skills{
+            height: 100%;
+            width: 100vw;
+            } 
+     }
+    //*********************************projects*****************************************
+    section#projects{
+    #container_projects{
+        height: 100%;
+    .carousel-inner{
+        position: relative;
+        bottom: 47px;
+        height: 21rem;
+        width: 16.69rem;
+        left: 78px;
+     }
+    #carouselExampleDark{
+        position: relative;
+        bottom: 2rem;
+    }
+    .carousel-indicators{
+        width: 30px;
+        position: relative;
+        right: 1.3rem;
+    }
+      .carousel-indicators{
+          position: relative;
+          top:17rem;
+      }
+      .carousel-control-next-icon{
+        position: relative;
+        bottom: 1.5rem;
+        left: 3.5rem;
+        height: 26px;
+      }
+      .carousel-control-prev-icon{
+        position: relative;
+        bottom: 1.5rem;
+        right: 4rem;
+        height: 26px;
+      }
+     } 
+    }
+    //*********************************services*****************************************
+    section#services{
+    #container_services{
+    height: 100%;
+    .fas , .fab{
+    font-size: 35px;
+    }
+    .card{
+    height: 77vh;
+    }
+    .card-text {
+    height: 6rem;
+    font-size: 13px;
+    }
+    #btn_card{
+    height: 8vh;
+    margin-top: 20vh;
+    font-size: 12px;
+    }
+    }
+    }
+    //*********************************call*****************************************
+    section#call{
+    #container_call{
+        height: 100%;
+        .card-body{
+         width: 87vw;  
+         height: 40rem;
+         h2{
+        font-size: 16px;
+        position: absolute;
+        top: 22rem;
+        } 
+        p{
+        font-size: 15px;
+        width: 15rem;
+        position: absolute;
+        top: 24rem;
+        }
+        .info{
+        position: relative;
+        top: 3vh
+        }
+        .caption{
+            font-size: 13px;
+            width: 100%;
+            position: absolute;
+            top: 73vh;
+            right: 1rem;
+        }
+        .image-container img{
+            position: absolute;
+            right: 17px;
+            width: 100%;
+            height: 54%;
+            top: 1rem;
+        }
+        }
+        
+    }
+    }
+    //*********************************idea*****************************************
+    section#idea{
+    #container_idea{
+        width: 80%;
+        height: 100%;
+        h4 , p{
+            font-size: 16px;
+        }
+        #alert_idea{
+            position: relative;
+            left: 33px;
+            height: 58vh;
+            width: 89vw;
+        }
+        .col-4{
+            width: 100%;
+        }
+        .form-control{
+            font-size: 10px;
+        }
+        .btn.btn-primary{
+            height: 5vh;
+            font-size: 12px;
+        }
+        #exampleFormControlTextarea1 {
+            height: 15vh;
+        }
+    }
+    }
+    //*********************************footer*****************************************
+    section#footer{
+    footer.bg-dark{
+        #container_footer{
+            height: 100%;
+        .fas{
+            font-size: 12px; 
+           }
+        }
+        p{
+            font-size: 16px;
+        }
+        .col-4{
+            width: 100%;
+        }
+        #myBtn{
+    display: none;
+            }
+    }
+    }
+}
+
+
+@media(min-width : 321px) and (max-width : 340px) {
     section#index{
         #container_index{
             height: 100%;
@@ -305,6 +885,191 @@
         position: relative;
         bottom: 1.5rem;
         right: 4.5rem;
+        height: 10px;
+      }
+     } 
+    }
+    //*********************************services*****************************************
+    section#services{
+    #container_services{
+    height: 100%;
+    #btn_card {
+     margin-top: 8vh;
+    }
+    .fas , .fab{
+    font-size: 35px;
+    }
+    .card{
+    height: 58vh;
+    }
+    .card-text{
+        height: 5rem;
+    }
+    }
+    }
+    //*********************************call*****************************************
+    section#call{
+    #container_call{
+        height: 100%;
+        .card-body{
+         width: 89vw;  
+         h2{
+        font-size: 13px;
+        } 
+        p{
+        font-size: 13px;
+        }
+        .info{
+        position: relative;
+        top: 7vh
+        }
+        .caption{
+            font-size: 10px;
+            width: 50%;
+        }
+        .image-container img{
+            width: 44%;
+            height: 75%;
+        }
+        }
+        
+    }
+    }
+    //*********************************idea*****************************************
+    section#idea{
+    #container_idea{
+        width: 80%;
+        height: 100%;
+        h4 , p{
+            font-size: 16px;
+        }
+        #alert_idea{
+            width: 88vw;
+            position: relative;
+            left: 2rem;
+            height: 100%;
+        }
+        .col-4{
+            width: 100%;
+        }
+        .form-control{
+            font-size: 8px;
+        }
+        .btn.btn-primary{
+            height: 4vh;
+            font-size: 8px;
+        }
+        #exampleFormControlTextarea1 {
+            height: 100%;
+        }
+    }
+    }
+    //*********************************footer*****************************************
+    section#footer{
+    footer.bg-dark{
+        #container_footer{
+            height: 100%;
+        .fas{
+            font-size: 25px; 
+           }
+        }
+        p{
+            font-size: 16px;
+        }
+        .col-4{
+            width: 100%;
+        }
+        #myBtn{
+    display: none;
+            }
+    }
+    }
+}
+
+@media(min-width : 340px) and (max-width : 359px) {
+    section#index{
+        #container_index{
+            height: 100%;
+            #title-top{
+                font-size: 30px;
+            }
+           #title-org{
+                font-size: 19px;
+            }
+            .takhasos{
+                font-size: 15px;
+            }     
+            .ability-item{
+                font-size: 16px;
+            }
+            .fas{
+             display: none;
+            }
+            .fab{
+            font-size: 17px;
+            position: relative;
+            bottom: 5px;
+            }
+            .far{
+            font-size: 17px;
+            position: relative;
+            bottom: 5px;
+            }
+            .social-item{
+                width: 35px;
+                height: 30px;
+            }
+        }
+    }
+    //*********************************info*********************************************
+    section#info{
+    #container_info{
+        background-color: rgb(255, 255, 255);
+        height: 100%;
+        width: 100vw;
+        } 
+    }
+    //*********************************skills******************************************
+    section#skills{
+        #container_skills{
+            height: 100%;
+            width: 100vw;
+            } 
+     }
+    //*********************************projects*****************************************
+    section#projects{
+    #container_projects{
+        height: 100%;
+    .carousel-inner{
+        position: relative;
+        bottom: 53px;
+        height: 9rem;
+        width: 19rem;
+        left: 87px;
+     }
+    #carouselExampleDark{
+        position: relative;
+        bottom: 2rem;
+    }
+    .carousel-indicators{
+        width: 30px;
+        position: relative;
+        right: 2.3rem;
+    }
+      .carousel-indicators{
+          position: relative;
+          top:7rem;
+      }
+      .carousel-control-next-icon{
+        position: relative;
+        bottom: 1.5rem;
+        left: 4.5rem;
+        height: 10px;
+      }
+      .carousel-control-prev-icon{
+        position: relative;
+        bottom: 1.5rem;
+        right: 4.3rem;
         height: 10px;
       }
      } 
@@ -1961,7 +2726,7 @@ position: absolute;
 top: 22%;
 left: 3%;
 &:hover{
-width: 175px;
+width: 158px;
 }
 }
 header .search .search-txt {
@@ -2136,7 +2901,7 @@ width: auto;
     top: 22%;
     left: 3%;
     &:hover{
-    width: 175px;
+    width: 158px;
     }
     }
     header .search .search-txt {

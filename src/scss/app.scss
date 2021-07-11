@@ -91,7 +91,7 @@ header{
     border-radius: 25px;
     transition: all 200ms ease;
     cursor: text;
-&:after {
+    &:after {
     content: "";
     position: absolute;
     width: 3px;
@@ -502,6 +502,7 @@ section#See_More{
 }  
 .grid-item img{
     width: 100%;
+    cursor: pointer;
 }
 .font-weight-bold{
     font-size: 18px;
