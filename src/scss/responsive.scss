@@ -470,7 +470,7 @@
             font-size: 13px;
             width: 100%;
             position: absolute;
-            top: 73vh;
+            top: 65vh;
             right: 1rem;
         }
         .image-container img{
@@ -1676,7 +1676,7 @@
     font-size: 80px;
     }
     .card{
-    height: 46vh;
+    height: 63vh;
     }
     h5.card-title {
         font-size: 30px;
@@ -1684,9 +1684,10 @@
     .card-text {
     height: 6rem;
     font-size: 30px;
+    line-height: 50px;
     }
     #btn_card{
-    margin-top: 8vh;
+    margin-top: 19vh;
     font-size: 30px;
     }
     }
@@ -2159,7 +2160,7 @@
     font-size: 64px;
     }
     .card{
-    height: 65vh;
+    height: 69vh;
     }
     h5.card-title {
         font-size: 36px;
@@ -2167,6 +2168,7 @@
     .card-text {
     height: 6rem;
     font-size: 38px;
+    line-height: 91px;
     }
     #btn_card{
     margin-top: 29vh;
@@ -2186,7 +2188,7 @@
         }
         .card-body{
             width: 94vw;
-            height: 100%;
+            height:60vh;
             position: relative;
             left: 9.2rem;  
         p{
@@ -2203,12 +2205,13 @@
         top: 7vh
         }
         .caption{
-            font-size: 32px;
-            width: 36%;
+            font-size: 26px;
+            width: 40%;
+            line-height: 42px;
         }
         .image-container img{
             width: 50%;
-            height: 61%;
+            height: 83%;
             position: absolute;
             right: 20rem;
             top: 6vh;
@@ -2684,7 +2687,7 @@ font-size: 2rem;
         }
         #alert_idea {
             position: relative;
-            height: 57vh;
+            height: 130vh;
             width: 94vw;
             right: 0.7rem;
         }
@@ -2699,7 +2702,7 @@ font-size: 2rem;
             font-size: 28px;
         }
         #exampleFormControlTextarea1 {
-            height: 25vh;
+            height: 48vh;
         }
     }
     }
