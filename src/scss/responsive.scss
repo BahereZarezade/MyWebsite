@@ -1313,7 +1313,7 @@
         }
         #alert_idea{
             position: relative;
-            height: 48vh;
+            height: 57vh;
             right: 0.3vh;
         }
         .col-4{
@@ -1327,7 +1327,7 @@
             font-size: 12px;
         }
         #exampleFormControlTextarea1 {
-            height: 10vh;
+            height: 15vh;
         }
     }
     }
@@ -2605,11 +2605,12 @@
         font-size: 35px;
     }
     .card{
-    height: 43vh;
+    height: 46vh;
     }
     .card-text{
         height: 13rem;
         font-size: 32px;
+        line-height: 57px;
     }
     .btn{
 font-size: 2rem;
@@ -2632,20 +2633,28 @@ font-size: 2rem;
         }
         .card-body{
          width: 96vw;
-         height: 40vh; 
+         height: 45vh; 
          h2{
         font-size: 40px;
+        position: relative;
+        right: 24px;
         } 
         p{
-        font-size: 15px;
+        font-size: 32px;
+        position: absolute;
+        top: 77px;
+        right: 20px;
         }
         .info{
         position: relative;
         top: 7vh
         }
         .caption{
-            font-size: 30px;
-            width: 50%;
+        font-size: 30px;
+        width: 50%;
+        position: relative;
+        top: 132px;
+        line-height: 45px;
         }
         .image-container img{
         width: 75%;
@@ -2699,6 +2708,10 @@ font-size: 2rem;
     footer.bg-dark{
         #container_footer{
             height: 100%;
+            margin-top: 72px;
+            #myBtn{
+                display: none;
+                }
         .fas{
             font-size: 35px; 
            }
@@ -2711,11 +2724,12 @@ font-size: 2rem;
         }
         .col-4{
             width: 100%;
+            margin-bottom: 59px;
         }
         #myBtn{
-         display: none;
-            }
-    }
+            display: none;
+        }
+     }
     }
 }
 

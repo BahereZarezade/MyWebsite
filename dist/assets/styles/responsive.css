@@ -1197,7 +1197,7 @@
   }
   section#idea #container_idea #alert_idea {
     position: relative;
-    height: 48vh;
+    height: 57vh;
     right: 0.3vh;
   }
   section#idea #container_idea .col-4 {
@@ -1211,7 +1211,7 @@
     font-size: 12px;
   }
   section#idea #container_idea #exampleFormControlTextarea1 {
-    height: 10vh;
+    height: 15vh;
   }
 
   section#footer footer.bg-dark #container_footer {
@@ -2357,11 +2357,12 @@
     font-size: 35px;
   }
   section#services #container_services .card {
-    height: 43vh;
+    height: 46vh;
   }
   section#services #container_services .card-text {
     height: 13rem;
     font-size: 32px;
+    line-height: 57px;
   }
   section#services #container_services .btn {
     font-size: 2rem;
@@ -2381,13 +2382,18 @@
   }
   section#call #container_call .card-body {
     width: 96vw;
-    height: 40vh;
+    height: 45vh;
   }
   section#call #container_call .card-body h2 {
     font-size: 40px;
+    position: relative;
+    right: 24px;
   }
   section#call #container_call .card-body p {
-    font-size: 15px;
+    font-size: 32px;
+    position: absolute;
+    top: 77px;
+    right: 20px;
   }
   section#call #container_call .card-body .info {
     position: relative;
@@ -2396,6 +2402,9 @@
   section#call #container_call .card-body .caption {
     font-size: 30px;
     width: 50%;
+    position: relative;
+    top: 132px;
+    line-height: 45px;
   }
   section#call #container_call .card-body .image-container img {
     width: 75%;
@@ -2440,6 +2449,10 @@
 
   section#footer footer.bg-dark #container_footer {
     height: 100%;
+    margin-top: 72px;
+  }
+  section#footer footer.bg-dark #container_footer #myBtn {
+    display: none;
   }
   section#footer footer.bg-dark #container_footer .fas {
     font-size: 35px;
@@ -2452,6 +2465,7 @@
   }
   section#footer footer.bg-dark .col-4 {
     width: 100%;
+    margin-bottom: 59px;
   }
   section#footer footer.bg-dark #myBtn {
     display: none;

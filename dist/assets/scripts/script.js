@@ -11,6 +11,9 @@ function scrollFunction() {
     } else {
         mybutton.style.display = "none";
     }
+	if (window.matchMedia("(min-width: 250px) and (max-width: 768px)").matches){
+		mybutton.style.display = "none";
+	}
 }
 
 // When the user clicks on the button, scroll to the top of the document
