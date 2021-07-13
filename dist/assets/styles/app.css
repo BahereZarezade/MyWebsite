@@ -469,7 +469,7 @@ section#resume #container_resume .card {
   box-shadow: 1px 1px 11px 1px black;
   width: 30rem;
   height: 15rem;
-  background: linear-gradient(to bottom, #4b5296, #192136, #0d0f22);
+  background: linear-gradient(to bottom, #5863c4, #121a2e, #0d1029);
 }
 section#resume #container_resume .card:hover {
   cursor: pointer;
@@ -494,7 +494,7 @@ section#resume #container_resume .fwb {
   font-weight: bold;
 }
 section#resume #container_resume .card-body {
-  color: black;
+  color: #7f8fa6;
 }
 section#resume #container_resume .card-body ::before {
   content: "";
