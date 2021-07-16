@@ -4,6 +4,25 @@
 @import "../vendors/bootstrap-5.0.0/scss/mixins";
 
 
+
+@media(min-width : 250px) and (max-width : 1024px){
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Kalame', 'Vazir', Arial, Helvetica, sans-serif;
+  }
+  
+  /* Main Styling */
+html,body {
+    /* حذف اسکرول افقی */
+    overflow-x: hidden;
+    font-family: 'Kalame', 'Vazir', Arial, Helvetica, sans-serif;
+    line-height: 1.7em;
+    min-height: 100vh;
+}
+}
+
 //*********************************index.html*****************************************
 @media(min-width : 250px) and (max-width : 270px) {
     header .search{   
@@ -449,12 +468,13 @@
     #container_call{
         height: 100%;
         .card-body{
-         width: 87vw;  
-         height: 40rem;
+         width: 40rem;  
+         height: 54rem;
          h2{
-        font-size: 16px;
-        position: absolute;
-        top: 22rem;
+            font-size: 16px;
+            position: absolute;
+            top: 22rem;
+            right: 21px;
         } 
         p{
         font-size: 15px;
@@ -464,22 +484,34 @@
         }
         .info{
         position: relative;
-        top: 3vh
+        top: 8vh;
+        right: 11rem;
         }
         .caption{
             font-size: 13px;
             width: 100%;
             position: absolute;
-            top: 65vh;
+            top: 77vh;
             right: 1rem;
         }
         .image-container img{
             position: absolute;
-            right: 17px;
-            width: 100%;
-            height: 54%;
+            right: 0px;
+            width: 111%;
+            height: 43%;
             top: 1rem;
         }
+        }
+        .card:nth-child(1):before {
+            content: "";
+            height: 4px;
+            position: absolute;
+            left: -0.75rem;
+            right: 0.25rem;
+            top: 861px;
+            border-top-left-radius: 4px;
+            border-top-right-radius: 4px;
+            background: #c913ad;
         }
         
     }
@@ -714,12 +746,13 @@
     #container_call{
         height: 100%;
         .card-body{
-         width: 87vw;  
-         height: 40rem;
+         width: 110vw;  
+         height: 38rem;
          h2{
-        font-size: 16px;
-        position: absolute;
-        top: 22rem;
+            font-size: 17px;
+            position: absolute;
+            top: 22rem;
+            right: 20px;
         } 
         p{
         font-size: 15px;
@@ -728,23 +761,35 @@
         top: 24rem;
         }
         .info{
-        position: relative;
-        top: 3vh
+            position: relative;
+            bottom: 24vh;
+            right: 44px;
         }
         .caption{
-            font-size: 13px;
-            width: 100%;
-            position: absolute;
-            top: 73vh;
-            right: 1rem;
+        font-size: 13px;
+        width: 106%;
+        position: absolute;
+        top: 58vh;
+        right: 12px;
         }
         .image-container img{
-            position: absolute;
-            right: 17px;
-            width: 100%;
-            height: 54%;
-            top: 1rem;
+        position: absolute;
+        right: 15px;
+        width: 98%;
+        height: 35%;
+        top: 1rem;
         }
+        }
+        .card:nth-child(1):before {
+            content: "";
+    height: 4px;
+    position: absolute;
+    left: 1rem;
+    right: 2.9rem;
+    top: 924px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    background: #c913ad;
         }
         
     }
@@ -1280,27 +1325,64 @@
     #container_call{
         height: 100%;
         .card-body{
-         width: 89vw;  
+            width: 89vw;
+            height: 684px;
+            position: relative;
+            right: 12px;
          h2{
-        font-size: 15px;
+            font-size: 20px;
+            position: relative;
+            right: 14px;
         } 
         p{
         font-size: 15px;
         }
         .info{
-        position: relative;
-        top: 7vh
+            position: relative;
+            top: 36vh;
+            right: 17px;
         }
         .caption{
-            font-size: 13px;
-            width: 50%;
+        position: absolute;
+        right: 22px;
+        top: 343px;
+        font-size: 14px;
+        width: 100%;
         }
         .image-container img{
-            width: 44%;
-            height: 75%;
+        border-radius: 20%;
+        border: 3px solid rgb(253, 253, 253);  
+        width: 194px;
+        height: 182px;
+        position: absolute;
+        right: 72px;
+        top:38px;
+        &:hover{
+            cursor: pointer;
+            box-shadow: 0px 0px 20px #ffffff;   
+            z-index: 2;   
+            -webkit-transition: all 200ms ease-in;   
+            -webkit-transform: scale(1.05);   
+            -ms-transition: all 500ms ease-in;   
+            -ms-transform: scale(1.05);   
+            -moz-transition: all 500ms ease-in;   
+            -moz-transform: scale(1.05);   
+            transition: all 500ms ease-in;   
+            transform: scale(1.05);
         }
         }
-        
+        }
+        .card:nth-child(1):before {
+            content: "";
+            height: 4px;
+            position: absolute;
+            left: 1.25rem;
+            right: 1.25rem;
+            top: 680px;
+            border-top-left-radius: 4px;
+            border-top-right-radius: 4px;
+            background: #c913ad;
+        }
     }
     }
     //*********************************idea*****************************************
@@ -1465,27 +1547,63 @@
     #container_call{
         height: 100%;
         .card-body{
-         width: 89vw;  
-         h2{
-        font-size: 19px;
-        position: relative;
-        bottom: 2rem;
-        } 
+            width: 89vw;
+            height: 684px;
+            margin-right: 23px;
+            h2{
+                font-size: 20px;
+                position: relative;
+                right: 14px;
+            } 
         p{
         font-size: 15px;
         }
         .info{
-        position: relative;
-        top: 7vh
+            position: relative;
+            top: 36vh;
+            right: 40px;
         }
         .caption{
-            font-size: 15px;
-            width: 50%;
+        position: absolute;
+        right: 30px;
+        top: 343px;
+        font-size: 15px;
+        width: 100%;
         }
         .image-container img{
-            width: 44%;
-            height: 75%;
+            border-radius: 20%;
+            border: 3px solid rgb(253, 253, 253);  
+            width: 230px;
+            height: 200px;
+            position: absolute;
+            right: 70px;
+            top:38px;
+            &:hover{
+                cursor: pointer;
+                box-shadow: 0px 0px 20px #ffffff;   
+                z-index: 2;   
+                -webkit-transition: all 200ms ease-in;   
+                -webkit-transform: scale(1.05);   
+                -ms-transition: all 500ms ease-in;   
+                -ms-transform: scale(1.05);   
+                -moz-transition: all 500ms ease-in;   
+                -moz-transform: scale(1.05);   
+                transition: all 500ms ease-in;   
+                transform: scale(1.05);
+            }
+            }
         }
+        .card:nth-child(1):before {
+            content: "";
+            height: 4px;
+            position: absolute;
+            left: 1.25rem;
+            right: 1.25rem;
+            top: 680px;
+            border-top-left-radius: 4px;
+            border-top-right-radius: 4px;
+            background: #c913ad;
+            margin-right: 25px;
         }
         
     }
@@ -1935,47 +2053,72 @@
     }
     //*********************************call*****************************************
     section#call{
-    #container_call{
-        height: 100%;
-        h2{
-            font-size: 25px;
-        }
-        p{
-            font-size: 16px;
-        }
-        .card-body{
-        width: 91vw;
-        height: 100%;
-        position: relative;
-        right: 0.2rem; 
-        p{
-        font-size: 16px;
-        }
-        .info{
-            h2{
-            font-size: 30px;
-            }
+        #container_call{
+            height: 100%;
+            .card-body{
+                width: 89vw;
+                height: 64rem;
+                margin-right: 23px;
+                h2{
+                    font-size: 34px;
+                    position: relative;
+                    right: 33px;
+                } 
             p{
-            font-size: 20px;
+            font-size: 25px;
             }
-        position: relative;
-        top: 7vh
+            .info{
+             position: relative;
+             top: 48vh;
+             right: 3rem;
+             line-height: 3rem;
+            }
+            .caption{
+                position: absolute;
+                right: 54px;
+                top: 29rem;
+                font-size: 21px;
+                width: 132%;
+                line-height: 4rem;
+            }
+            .image-container img{
+                border-radius: 20%;
+                border: 3px solid #fdfdfd;
+                width: 300px;
+                height: 300px;
+                position: absolute;
+                right: 106px;
+                top: 46px;
+                &:hover{
+                    cursor: pointer;
+                    box-shadow: 0px 0px 20px #ffffff;   
+                    z-index: 2;   
+                    -webkit-transition: all 200ms ease-in;   
+                    -webkit-transform: scale(1.05);   
+                    -ms-transition: all 500ms ease-in;   
+                    -ms-transform: scale(1.05);   
+                    -moz-transition: all 500ms ease-in;   
+                    -moz-transform: scale(1.05);   
+                    transition: all 500ms ease-in;   
+                    transform: scale(1.05);
+                }
+                }
+            }
+            .card:nth-child(1):before {
+                content: "";
+                height: 4px;
+                position: absolute;
+                left: 3.25rem;
+                right: 3.25rem;
+                top: 1019px;
+                border-top-left-radius: 4px;
+                border-top-right-radius: 4px;
+                background: #c913ad;
+                margin-right: 25px;
+            }
+            
         }
-        .caption{
-            font-size: 16px;
-            width: 36%;
         }
-        .image-container img{
-            width: 50%;
-            height: 61%;
-            position: absolute;
-            right: 14rem;
-            top: 12vh;
-        }
-        }
-        
-    }
-    }
     //*********************************idea*****************************************
     section#idea{
     #container_idea{
@@ -2178,48 +2321,71 @@
     }
     //*********************************call*****************************************
     section#call{
-    #container_call{
-        height: 100%;
-        h2{
-            font-size: 38px;
-        }
-        p{
-            font-size: 25px;
-        }
-        .card-body{
-            width: 94vw;
-            height:60vh;
-            position: relative;
-            left: 9.2rem;  
-        p{
-        font-size: 32px;
-        }
-        .info{
-            h2{
-            font-size: 40px;
-            }
+        #container_call{
+            height: 100%;
+            .card-body{
+                width: 89vw;
+                height: 64rem;
+                margin-right: 23px;
+                h2{
+                    font-size: 35px;
+                    position: relative;
+                    right: 14px;
+                } 
             p{
-            font-size: 32px;
+            font-size: 28px;
             }
-        position: relative;
-        top: 7vh
+            .info{
+             position: relative;
+             top: 45vh;
+             right: 9rem;
+            }
+            .caption{
+                position: absolute;
+                right: 0px;
+                top: 581px;
+                font-size: 25px;
+                width: 125%;
+                line-height: 3rem;
+            }
+            .image-container img{
+                border-radius: 20%;
+                border: 3px solid #fdfdfd;
+                width: 409px;
+                height: 400px;
+                position: absolute;
+                right: 11px;
+                top: 46px;
+                &:hover{
+                    cursor: pointer;
+                    box-shadow: 0px 0px 20px #ffffff;   
+                    z-index: 2;   
+                    -webkit-transition: all 200ms ease-in;   
+                    -webkit-transform: scale(1.05);   
+                    -ms-transition: all 500ms ease-in;   
+                    -ms-transform: scale(1.05);   
+                    -moz-transition: all 500ms ease-in;   
+                    -moz-transform: scale(1.05);   
+                    transition: all 500ms ease-in;   
+                    transform: scale(1.05);
+                }
+                }
+            }
+            .card:nth-child(1):before {
+                content: "";
+                height: 4px;
+                position: absolute;
+                left: 0.25rem;
+                right: 0.25rem;
+                top: 1018px;
+                border-top-left-radius: 4px;
+                border-top-right-radius: 4px;
+                background: #c913ad;
+                margin-right: 25px;
+            }
+            
         }
-        .caption{
-            font-size: 26px;
-            width: 40%;
-            line-height: 42px;
         }
-        .image-container img{
-            width: 50%;
-            height: 83%;
-            position: absolute;
-            right: 20rem;
-            top: 6vh;
-        }
-        }
-        
-    }
-    }
     //*********************************idea*****************************************
     section#idea{
     #container_idea{
@@ -2623,54 +2789,72 @@ font-size: 2rem;
     }
     //*********************************call*****************************************
     section#call{
-    #container_call{
-        height: 100%;
-        h2{
-            font-size: 50px;
+        #container_call{
+            height: 100%;
+            .card-body{
+                width: 89vw;
+                height: 84rem;
+                margin-right: 23px;
+                h2{
+                    font-size: 45px;
+                    position: relative;
+                    right: 33px;
+                } 
+            p{
+            font-size: 35px;
+            }
+            .info{
+             position: relative;
+             top: 45vh;
+             right: 13rem;
+             line-height: 3rem;
+            }
+            .caption{
+                position: absolute;
+                right: 0px;
+                top: 48rem;
+                font-size: 32px;
+                width: 132%;
+                line-height: 4rem;
+            }
+            .image-container img{
+                border-radius: 20%;
+                border: 3px solid #fdfdfd;
+                width: 539px;
+                height: 534px;
+                position: absolute;
+                right: 11px;
+                top: 46px;
+                &:hover{
+                    cursor: pointer;
+                    box-shadow: 0px 0px 20px #ffffff;   
+                    z-index: 2;   
+                    -webkit-transition: all 200ms ease-in;   
+                    -webkit-transform: scale(1.05);   
+                    -ms-transition: all 500ms ease-in;   
+                    -ms-transform: scale(1.05);   
+                    -moz-transition: all 500ms ease-in;   
+                    -moz-transform: scale(1.05);   
+                    transition: all 500ms ease-in;   
+                    transform: scale(1.05);
+                }
+                }
+            }
+            .card:nth-child(1):before {
+                content: "";
+                height: 4px;
+                position: absolute;
+                left: 0.25rem;
+                right: 0.25rem;
+                top: 1338px;
+                border-top-left-radius: 4px;
+                border-top-right-radius: 4px;
+                background: #c913ad;
+                margin-right: 25px;
+            }
+            
         }
-        p{
-            font-size: 30px;
         }
-        .row.clr{
-            display: unset;
-        }
-        .card-body{
-         width: 96vw;
-         height: 45vh; 
-         h2{
-        font-size: 40px;
-        position: relative;
-        right: 24px;
-        } 
-        p{
-        font-size: 32px;
-        position: absolute;
-        top: 77px;
-        right: 20px;
-        }
-        .info{
-        position: relative;
-        top: 7vh
-        }
-        .caption{
-        font-size: 30px;
-        width: 50%;
-        position: relative;
-        top: 132px;
-        line-height: 45px;
-        }
-        .image-container img{
-        width: 75%;
-        height: 84%;
-        position: absolute;
-        bottom: 8%;
-        right: 93%;
-        }
-        }
-  
-        
-    }
-    }
     //*********************************idea*****************************************
     section#idea{
     #container_idea{

@@ -355,7 +355,7 @@ section#call #container_call .image-container img {
   width: 37%;
   height: 76%;
   border-radius: 20%;
-  border: 3px solid wheat;
+  border: 3px solid #fdfdfd;
   position: absolute;
   background: #eeeeee;
   bottom: 13%;

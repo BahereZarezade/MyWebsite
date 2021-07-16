@@ -1,3 +1,21 @@
+@charset "UTF-8";
+@media (min-width: 250px) and (max-width: 1024px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Kalame", "Vazir", Arial, Helvetica, sans-serif;
+  }
+
+  /* Main Styling */
+  html, body {
+    /* حذف اسکرول افقی */
+    overflow-x: hidden;
+    font-family: "Kalame", "Vazir", Arial, Helvetica, sans-serif;
+    line-height: 1.7em;
+    min-height: 100vh;
+  }
+}
 @media (min-width: 250px) and (max-width: 270px) {
   header .search {
     display: inline-block;
@@ -416,13 +434,14 @@
     height: 100%;
   }
   section#call #container_call .card-body {
-    width: 87vw;
-    height: 40rem;
+    width: 40rem;
+    height: 54rem;
   }
   section#call #container_call .card-body h2 {
     font-size: 16px;
     position: absolute;
     top: 22rem;
+    right: 21px;
   }
   section#call #container_call .card-body p {
     font-size: 15px;
@@ -432,21 +451,33 @@
   }
   section#call #container_call .card-body .info {
     position: relative;
-    top: 3vh;
+    top: 8vh;
+    right: 11rem;
   }
   section#call #container_call .card-body .caption {
     font-size: 13px;
     width: 100%;
     position: absolute;
-    top: 65vh;
+    top: 77vh;
     right: 1rem;
   }
   section#call #container_call .card-body .image-container img {
     position: absolute;
-    right: 17px;
-    width: 100%;
-    height: 54%;
+    right: 0px;
+    width: 111%;
+    height: 43%;
     top: 1rem;
+  }
+  section#call #container_call .card:nth-child(1):before {
+    content: "";
+    height: 4px;
+    position: absolute;
+    left: -0.75rem;
+    right: 0.25rem;
+    top: 861px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    background: #c913ad;
   }
 
   section#idea #container_idea {
@@ -663,13 +694,14 @@
     height: 100%;
   }
   section#call #container_call .card-body {
-    width: 87vw;
-    height: 40rem;
+    width: 110vw;
+    height: 38rem;
   }
   section#call #container_call .card-body h2 {
-    font-size: 16px;
+    font-size: 17px;
     position: absolute;
     top: 22rem;
+    right: 20px;
   }
   section#call #container_call .card-body p {
     font-size: 15px;
@@ -679,21 +711,33 @@
   }
   section#call #container_call .card-body .info {
     position: relative;
-    top: 3vh;
+    bottom: 24vh;
+    right: 44px;
   }
   section#call #container_call .card-body .caption {
     font-size: 13px;
-    width: 100%;
+    width: 106%;
     position: absolute;
-    top: 73vh;
-    right: 1rem;
+    top: 58vh;
+    right: 12px;
   }
   section#call #container_call .card-body .image-container img {
     position: absolute;
-    right: 17px;
-    width: 100%;
-    height: 54%;
+    right: 15px;
+    width: 98%;
+    height: 35%;
     top: 1rem;
+  }
+  section#call #container_call .card:nth-child(1):before {
+    content: "";
+    height: 4px;
+    position: absolute;
+    left: 1rem;
+    right: 2.9rem;
+    top: 924px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    background: #c913ad;
   }
 
   section#idea #container_idea {
@@ -1168,24 +1212,62 @@
   }
   section#call #container_call .card-body {
     width: 89vw;
+    height: 684px;
+    position: relative;
+    right: 12px;
   }
   section#call #container_call .card-body h2 {
-    font-size: 15px;
+    font-size: 20px;
+    position: relative;
+    right: 14px;
   }
   section#call #container_call .card-body p {
     font-size: 15px;
   }
   section#call #container_call .card-body .info {
     position: relative;
-    top: 7vh;
+    top: 36vh;
+    right: 17px;
   }
   section#call #container_call .card-body .caption {
-    font-size: 13px;
-    width: 50%;
+    position: absolute;
+    right: 22px;
+    top: 343px;
+    font-size: 14px;
+    width: 100%;
   }
   section#call #container_call .card-body .image-container img {
-    width: 44%;
-    height: 75%;
+    border-radius: 20%;
+    border: 3px solid #fdfdfd;
+    width: 194px;
+    height: 182px;
+    position: absolute;
+    right: 72px;
+    top: 38px;
+  }
+  section#call #container_call .card-body .image-container img:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 20px #ffffff;
+    z-index: 2;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.05);
+    -ms-transition: all 500ms ease-in;
+    -ms-transform: scale(1.05);
+    -moz-transition: all 500ms ease-in;
+    -moz-transform: scale(1.05);
+    transition: all 500ms ease-in;
+    transform: scale(1.05);
+  }
+  section#call #container_call .card:nth-child(1):before {
+    content: "";
+    height: 4px;
+    position: absolute;
+    left: 1.25rem;
+    right: 1.25rem;
+    top: 680px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    background: #c913ad;
   }
 
   section#idea #container_idea {
@@ -1332,26 +1414,62 @@
   }
   section#call #container_call .card-body {
     width: 89vw;
+    height: 684px;
+    margin-right: 23px;
   }
   section#call #container_call .card-body h2 {
-    font-size: 19px;
+    font-size: 20px;
     position: relative;
-    bottom: 2rem;
+    right: 14px;
   }
   section#call #container_call .card-body p {
     font-size: 15px;
   }
   section#call #container_call .card-body .info {
     position: relative;
-    top: 7vh;
+    top: 36vh;
+    right: 40px;
   }
   section#call #container_call .card-body .caption {
+    position: absolute;
+    right: 30px;
+    top: 343px;
     font-size: 15px;
-    width: 50%;
+    width: 100%;
   }
   section#call #container_call .card-body .image-container img {
-    width: 44%;
-    height: 75%;
+    border-radius: 20%;
+    border: 3px solid #fdfdfd;
+    width: 230px;
+    height: 200px;
+    position: absolute;
+    right: 70px;
+    top: 38px;
+  }
+  section#call #container_call .card-body .image-container img:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 20px #ffffff;
+    z-index: 2;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.05);
+    -ms-transition: all 500ms ease-in;
+    -ms-transform: scale(1.05);
+    -moz-transition: all 500ms ease-in;
+    -moz-transform: scale(1.05);
+    transition: all 500ms ease-in;
+    transform: scale(1.05);
+  }
+  section#call #container_call .card:nth-child(1):before {
+    content: "";
+    height: 4px;
+    position: absolute;
+    left: 1.25rem;
+    right: 1.25rem;
+    top: 680px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    background: #c913ad;
+    margin-right: 25px;
   }
 
   section#idea #container_idea {
@@ -1759,41 +1877,66 @@
   section#call #container_call {
     height: 100%;
   }
-  section#call #container_call h2 {
-    font-size: 25px;
-  }
-  section#call #container_call p {
-    font-size: 16px;
-  }
   section#call #container_call .card-body {
-    width: 91vw;
-    height: 100%;
+    width: 89vw;
+    height: 64rem;
+    margin-right: 23px;
+  }
+  section#call #container_call .card-body h2 {
+    font-size: 34px;
     position: relative;
-    right: 0.2rem;
+    right: 33px;
   }
   section#call #container_call .card-body p {
-    font-size: 16px;
+    font-size: 25px;
   }
   section#call #container_call .card-body .info {
     position: relative;
-    top: 7vh;
-  }
-  section#call #container_call .card-body .info h2 {
-    font-size: 30px;
-  }
-  section#call #container_call .card-body .info p {
-    font-size: 20px;
+    top: 48vh;
+    right: 3rem;
+    line-height: 3rem;
   }
   section#call #container_call .card-body .caption {
-    font-size: 16px;
-    width: 36%;
+    position: absolute;
+    right: 54px;
+    top: 29rem;
+    font-size: 21px;
+    width: 132%;
+    line-height: 4rem;
   }
   section#call #container_call .card-body .image-container img {
-    width: 50%;
-    height: 61%;
+    border-radius: 20%;
+    border: 3px solid #fdfdfd;
+    width: 300px;
+    height: 300px;
     position: absolute;
-    right: 14rem;
-    top: 12vh;
+    right: 106px;
+    top: 46px;
+  }
+  section#call #container_call .card-body .image-container img:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 20px #ffffff;
+    z-index: 2;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.05);
+    -ms-transition: all 500ms ease-in;
+    -ms-transform: scale(1.05);
+    -moz-transition: all 500ms ease-in;
+    -moz-transform: scale(1.05);
+    transition: all 500ms ease-in;
+    transform: scale(1.05);
+  }
+  section#call #container_call .card:nth-child(1):before {
+    content: "";
+    height: 4px;
+    position: absolute;
+    left: 3.25rem;
+    right: 3.25rem;
+    top: 1019px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    background: #c913ad;
+    margin-right: 25px;
   }
 
   section#idea #container_idea {
@@ -1979,42 +2122,65 @@
   section#call #container_call {
     height: 100%;
   }
-  section#call #container_call h2 {
-    font-size: 38px;
-  }
-  section#call #container_call p {
-    font-size: 25px;
-  }
   section#call #container_call .card-body {
-    width: 94vw;
-    height: 60vh;
+    width: 89vw;
+    height: 64rem;
+    margin-right: 23px;
+  }
+  section#call #container_call .card-body h2 {
+    font-size: 35px;
     position: relative;
-    left: 9.2rem;
+    right: 14px;
   }
   section#call #container_call .card-body p {
-    font-size: 32px;
+    font-size: 28px;
   }
   section#call #container_call .card-body .info {
     position: relative;
-    top: 7vh;
-  }
-  section#call #container_call .card-body .info h2 {
-    font-size: 40px;
-  }
-  section#call #container_call .card-body .info p {
-    font-size: 32px;
+    top: 45vh;
+    right: 9rem;
   }
   section#call #container_call .card-body .caption {
-    font-size: 26px;
-    width: 40%;
-    line-height: 42px;
+    position: absolute;
+    right: 0px;
+    top: 581px;
+    font-size: 25px;
+    width: 125%;
+    line-height: 3rem;
   }
   section#call #container_call .card-body .image-container img {
-    width: 50%;
-    height: 83%;
+    border-radius: 20%;
+    border: 3px solid #fdfdfd;
+    width: 409px;
+    height: 400px;
     position: absolute;
-    right: 20rem;
-    top: 6vh;
+    right: 11px;
+    top: 46px;
+  }
+  section#call #container_call .card-body .image-container img:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 20px #ffffff;
+    z-index: 2;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.05);
+    -ms-transition: all 500ms ease-in;
+    -ms-transform: scale(1.05);
+    -moz-transition: all 500ms ease-in;
+    -moz-transform: scale(1.05);
+    transition: all 500ms ease-in;
+    transform: scale(1.05);
+  }
+  section#call #container_call .card:nth-child(1):before {
+    content: "";
+    height: 4px;
+    position: absolute;
+    left: 0.25rem;
+    right: 0.25rem;
+    top: 1018px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    background: #c913ad;
+    margin-right: 25px;
   }
 
   section#idea #container_idea {
@@ -2374,47 +2540,66 @@
   section#call #container_call {
     height: 100%;
   }
-  section#call #container_call h2 {
-    font-size: 50px;
-  }
-  section#call #container_call p {
-    font-size: 30px;
-  }
-  section#call #container_call .row.clr {
-    display: unset;
-  }
   section#call #container_call .card-body {
-    width: 96vw;
-    height: 45vh;
+    width: 89vw;
+    height: 84rem;
+    margin-right: 23px;
   }
   section#call #container_call .card-body h2 {
-    font-size: 40px;
+    font-size: 45px;
     position: relative;
-    right: 24px;
+    right: 33px;
   }
   section#call #container_call .card-body p {
-    font-size: 32px;
-    position: absolute;
-    top: 77px;
-    right: 20px;
+    font-size: 35px;
   }
   section#call #container_call .card-body .info {
     position: relative;
-    top: 7vh;
+    top: 45vh;
+    right: 13rem;
+    line-height: 3rem;
   }
   section#call #container_call .card-body .caption {
-    font-size: 30px;
-    width: 50%;
-    position: relative;
-    top: 132px;
-    line-height: 45px;
+    position: absolute;
+    right: 0px;
+    top: 48rem;
+    font-size: 32px;
+    width: 132%;
+    line-height: 4rem;
   }
   section#call #container_call .card-body .image-container img {
-    width: 75%;
-    height: 84%;
+    border-radius: 20%;
+    border: 3px solid #fdfdfd;
+    width: 539px;
+    height: 534px;
     position: absolute;
-    bottom: 8%;
-    right: 93%;
+    right: 11px;
+    top: 46px;
+  }
+  section#call #container_call .card-body .image-container img:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 20px #ffffff;
+    z-index: 2;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.05);
+    -ms-transition: all 500ms ease-in;
+    -ms-transform: scale(1.05);
+    -moz-transition: all 500ms ease-in;
+    -moz-transform: scale(1.05);
+    transition: all 500ms ease-in;
+    transform: scale(1.05);
+  }
+  section#call #container_call .card:nth-child(1):before {
+    content: "";
+    height: 4px;
+    position: absolute;
+    left: 0.25rem;
+    right: 0.25rem;
+    top: 1338px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    background: #c913ad;
+    margin-right: 25px;
   }
 
   section#idea #container_idea {
