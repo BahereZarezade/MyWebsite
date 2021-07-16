@@ -2504,14 +2504,27 @@
     font-weight: bold;
   }
 
-  section#resume #container_resume {
-    height: 100%;
+  section#resume #container_resume .wb-bg-banner {
+    height: 240vh;
+  }
+  section#resume #container_resume .row {
+    margin-top: 70px;
   }
   section#resume #container_resume .col-6 {
     width: 100%;
   }
   section#resume #container_resume .card {
-    width: auto;
+    overflow: hidden;
+    height: 109vh;
+    width: 241px;
+    position: absolute;
+    right: 0px;
+  }
+  section#resume #container_resume .card h4 {
+    font-size: 18px;
+  }
+  section#resume #container_resume .card p {
+    font-size: 12px;
   }
 }
 @media (min-width: 321px) and (max-width: 767px) {
@@ -2545,13 +2558,69 @@
   }
 
   section#resume #container_resume {
-    height: 100%;
+    height: 200vh;
+  }
+  section#resume #container_resume .row {
+    margin-top: 50px;
   }
   section#resume #container_resume .col-6 {
     width: 100%;
+    margin-top: 50px;
   }
   section#resume #container_resume .card {
-    width: auto;
+    overflow: hidden;
+    height: 80vh;
+    width: 344px;
+    position: relative;
+    left: 24px;
+  }
+}
+@media (min-width: 411px) and (max-width: 767px) {
+  header .search {
+    position: absolute;
+    top: 22%;
+    left: 5%;
+  }
+  header .search:hover {
+    width: 175px;
+  }
+
+  header .search .search-txt {
+    position: relative;
+    right: 10px;
+    bottom: 5px;
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    font-size: 14px;
+    color: #7f8fa6;
+    transition: 200ms;
+    line-height: 27px;
+    width: 0px;
+    direction: rtl;
+    font-family: Vazir;
+    padding-right: 10px;
+    font-weight: bold;
+  }
+
+  section#resume #container_resume {
+    height: 200vh;
+  }
+  section#resume #container_resume .row {
+    margin-top: 50px;
+  }
+  section#resume #container_resume .col-6 {
+    width: 100%;
+    margin-top: 50px;
+  }
+  section#resume #container_resume .card {
+    overflow: hidden;
+    height: 82vh;
+    width: 378px;
+    position: relative;
+    left: 24px;
   }
 }
 @media (min-width: 768px) and (max-width: 832px) {
@@ -2592,6 +2661,16 @@
   }
   section#resume #container_resume .card {
     width: auto;
+    margin-bottom: 30px;
+  }
+  section#resume #container_resume .card h4 {
+    font-size: 26px;
+  }
+  section#resume #container_resume .card p {
+    font-size: 22px;
+  }
+  section#resume #container_resume .card span, section#resume #container_resume .card a {
+    font-size: 25px;
   }
 }
 @media (min-width: 833px) and (max-width: 1024px) {
@@ -2625,16 +2704,27 @@
   }
 
   section#resume #container_resume {
-    height: 100%;
+    height: 110vh;
   }
   section#resume #container_resume .card {
-    height: 23rem;
+    height: 40rem;
+    width: 934px;
+    margin-bottom: 50px;
   }
-  section#resume #container_resume span {
+  section#resume #container_resume .row {
+    margin-top: 90px;
+  }
+  section#resume #container_resume .col-6 {
+    width: 100%;
+  }
+  section#resume #container_resume span, section#resume #container_resume a {
     font-size: 40px;
   }
-  section#resume #container_resume h5 {
+  section#resume #container_resume h4, section#resume #container_resume h5 {
     font-size: 35px;
+  }
+  section#resume #container_resume h1, section#resume #container_resume h2, section#resume #container_resume h3, section#resume #container_resume h4, section#resume #container_resume h5, section#resume #container_resume p {
+    line-height: 54px;
   }
   section#resume #container_resume p {
     font-size: 30px;

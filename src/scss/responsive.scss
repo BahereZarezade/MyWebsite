@@ -2767,12 +2767,27 @@ font-weight: bold;
 }
 section#resume{
 #container_resume {
-    height: 100%;
+    .wb-bg-banner {
+        height: 240vh;
+    }
+    .row{
+        margin-top: 70px;
+    }
 .col-6{
 width: 100%;
 }
 .card{
-width: auto;
+    overflow: hidden;
+    height: 109vh;
+    width: 241px;
+    position: absolute;
+    right: 0px;
+    h4{
+        font-size: 18px;
+    }
+    p{
+        font-size: 12px;
+    }
 } 
 }
 }
@@ -2809,15 +2824,72 @@ width: auto;
     }
     section#resume{
     #container_resume {
-        height: 100%;
+        height: 200vh;
+        .row{
+            margin-top: 50px;
+        }
     .col-6{
     width: 100%;
+    margin-top: 50px;
     }
-    .card{
-    width: auto;
-    } 
+    .card {
+    overflow: hidden;
+    height: 80vh;
+    width: 344px;
+    position: relative;
+    left: 24px;
+}
+}
+}
+}
+
+@media(min-width : 411px) and (max-width : 767px) {
+    header .search{
+    position: absolute;
+    top: 22%;
+    left: 5%;
+    &:hover{
+    width: 175px;
     }
     }
+    header .search .search-txt {
+    position: relative;
+    right: 10px;
+    bottom: 5px;
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    font-size: 14px;
+    color: #7f8fa6;
+    transition: 200ms;
+    line-height: 27px;
+    width: 0px;
+    direction: rtl;
+    font-family: Vazir;
+    padding-right: 10px;
+    font-weight: bold;
+    }
+    section#resume{
+    #container_resume {
+        height: 200vh;
+        .row{
+            margin-top: 50px;
+        }
+    .col-6{
+    width: 100%;
+    margin-top: 50px;
+    }
+    .card {
+        overflow: hidden;
+        height: 82vh;
+        width: 378px;
+        position: relative;
+        left: 24px;
+}
+}
+}
 }
 
 
@@ -2857,6 +2929,16 @@ width: auto;
     }
     .card{
     width: auto;
+    margin-bottom: 30px;
+    h4{
+        font-size: 26px;
+    }
+    p{
+        font-size: 22px;
+    }
+    span, a{
+        font-size: 25px;
+    }
     } 
     }
     }
@@ -2893,15 +2975,26 @@ width: auto;
     }
     section#resume{
     #container_resume {
-        height: 100%;
+        height: 110vh;
     .card{
-        height: 23rem;
+    height: 40rem;
+    width: 934px;
+    margin-bottom: 50px;
     }
-    span{
+    .row{
+        margin-top: 90px;
+    }
+    .col-6{
+        width: 100%;
+    }
+    span, a{
         font-size: 40px;
     }
-    h5{
+    h4, h5{
         font-size: 35px;
+    }
+    h1, h2, h3, h4, h5, p{
+        line-height: 54px;
     }
     p{
         font-size: 30px;
@@ -2909,6 +3002,7 @@ width: auto;
     }
     }
 }
+
 
 ///////////////////////////////////////////See_More.html/////////////////////////////////////
     

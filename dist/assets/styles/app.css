@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Kalame", "Vazir", Arial, Helvetica, sans-serif;
 }
 
 /* Main Styling */
@@ -12,6 +13,7 @@ html, body {
   overflow-x: hidden;
   font-family: "Kalame", "Vazir", Arial, Helvetica, sans-serif;
   line-height: 1.7em;
+  min-height: 100vh;
 }
 html section, body section {
   display: block;
@@ -317,17 +319,36 @@ section#call #container_call {
   height: 80vh;
 }
 section#call #container_call .card {
+  display: flex;
+  align-items: center;
+  justify-self: center;
   cursor: pointer;
   border: 1px solid rgba(0, 0, 0, 0.459);
   letter-spacing: normal;
+  margin-bottom: 50px;
+}
+section#call #container_call .card:nth-child(1):before {
+  content: "";
+  height: 4px;
+  position: absolute;
+  left: 1.25rem;
+  right: 1.25rem;
+  top: 379px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  background: #c913ad;
 }
 section#call #container_call .card-body {
   cursor: pointer;
   height: 100%;
+  width: 55vw;
+}
+section#call #container_call .col-7 {
+  margin: 30px 68px 0px 0px;
 }
 section#call #container_call .col-md-6 {
   padding-left: 7rem;
-  padding-right: 8.5rem;
+  padding-right: 12rem;
 }
 section#call #container_call .image-container img {
   cursor: pointer;
@@ -338,7 +359,7 @@ section#call #container_call .image-container img {
   position: absolute;
   background: #eeeeee;
   bottom: 13%;
-  right: 59%;
+  right: 70%;
 }
 section#call #container_call .image-container img:hover {
   cursor: pointer;
@@ -355,17 +376,18 @@ section#call #container_call .image-container img:hover {
 }
 section#call #container_call .caption {
   position: relative;
-  right: 3%;
-  top: 6%;
+  right: 70px;
+  bottom: 24px;
 }
 
 section#idea #container_idea {
-  width: 51vw;
-  height: 60vh;
+  height: 100%;
+  width: 57vw;
 }
 section#idea #container_idea #alert_idea {
   position: relative;
   left: 1.5vh;
+  margin-top: 120px;
 }
 section#idea #container_idea #exampleFormControlTextarea1 {
   height: 142px;
@@ -451,61 +473,62 @@ section#See_More .container.portfolio .colorA {
 
 section#resume {
   background: linear-gradient(to bottom, #4b5296, #222c47, #0f1127);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 120vh;
+  box-sizing: border-box;
 }
 section#resume #container_resume {
-  height: 170vh;
+  direction: rtl;
+  display: flex;
+  justify-content: space-between;
 }
-section#resume #container_resume .col-6 {
-  margin-top: 2%;
+section#resume #container_resume .wb-bg-banner {
+  height: 85vh;
+  margin-bottom: 80px;
 }
-section#resume #container_resume .fas {
+section#resume #container_resume .far, section#resume #container_resume .fas {
   margin-left: 1%;
+  color: #fff;
 }
-section#resume #container_resume .caption {
-  color: whitesmoke;
+section#resume #container_resume h1, section#resume #container_resume h2, section#resume #container_resume h3, section#resume #container_resume h4, section#resume #container_resume h5, section#resume #container_resume h6, section#resume #container_resume p {
+  line-height: 40px;
 }
-section#resume #container_resume .card {
-  cursor: pointer;
-  box-shadow: 1px 1px 11px 1px black;
-  width: 30rem;
-  height: 15rem;
-  background: linear-gradient(to bottom, #5863c4, #121a2e, #0d1029);
-}
-section#resume #container_resume .card:hover {
-  cursor: pointer;
-  box-shadow: 0px 0px 20px #ffffff;
-  z-index: 2;
-  -webkit-transition: all 200ms ease-in;
-  -webkit-transform: scale(1.02);
-  -ms-transition: all 500ms ease-in;
-  -ms-transform: scale(1.02);
-  -moz-transition: all 500ms ease-in;
-  -moz-transform: scale(1.02);
-  transition: all 500ms ease-in;
-  transform: scale(1.02);
-}
-section#resume #container_resume .text-muted {
-  color: #d4d4d4 !important;
-}
-section#resume #container_resume .mt {
-  margin-top: 5%;
-}
-section#resume #container_resume .fwb {
+section#resume #container_resume h2 {
+  color: #000;
+  font-size: 20px;
   font-weight: bold;
 }
-section#resume #container_resume .card-body {
-  color: #7f8fa6;
+section#resume #container_resume .header {
+  margin: 0px 30px 0px 0px;
 }
-section#resume #container_resume .card-body ::before {
+section#resume #container_resume .card {
+  background: rgba(27, 22, 56, 0.863);
+  cursor: pointer;
+  border-radius: 0;
+  position: relative;
+  margin: 0px 20px 0px 30px;
+  width: 450px;
+  height: 530px;
+  padding: 40px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+  overflow: hidden;
+  color: #656566;
+}
+section#resume #container_resume .card .caption {
+  color: white;
+}
+section#resume #container_resume .card:nth-child(2):before {
   content: "";
   height: 4px;
   position: absolute;
   left: 1.25rem;
   right: 1.25rem;
-  background: black;
   bottom: 0;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
+  background: #c913ad;
 }
 
 /*# sourceMappingURL=app.css.map */
