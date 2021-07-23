@@ -4,13 +4,12 @@
     margin: 0;
     padding: 0;
     -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+            box-sizing: border-box;
     font-family: "Kalame", "Vazir", Arial, Helvetica, sans-serif;
   }
-
   /* Main Styling */
   html,
-body {
+  body {
     /* حذف اسکرول افقی */
     overflow-x: hidden;
     font-family: "Kalame", "Vazir", Arial, Helvetica, sans-serif;
@@ -18,13 +17,14 @@ body {
     min-height: 100vh;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
+
 @media (min-width: 250px) and (max-width: 270px) {
   header .search {
     display: inline-block;
@@ -34,7 +34,7 @@ body {
     height: 30px;
     width: 30px;
     -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+            box-sizing: border-box;
     margin: 0px 8px 7px 0px;
     padding: 7px 9px 0px 9px;
     border: 3px solid #ffffff;
@@ -43,7 +43,6 @@ body {
     transition: all 200ms ease;
     cursor: text;
   }
-
   header .search:after {
     content: "";
     position: absolute;
@@ -54,29 +53,24 @@ body {
     background: #ffffff;
     border-radius: 3px;
     -webkit-transform: rotate(-45deg);
-    transform: rotate(-45deg);
+            transform: rotate(-45deg);
     -webkit-transition: all 200ms ease;
     transition: all 200ms ease;
   }
-
   header .search:after ::-webkit-input-placeholder {
     /* Chrome/Opera/Safari */
     font-size: 5px;
   }
-
   header .search.active, header .search:hover {
     width: 158px;
   }
-
   header .search.active .search-txt, header .search:hover .search-txt {
     width: 140px;
   }
-
   header .search.active:after, header .search:hover:after {
     height: 0px;
     width: 0;
   }
-
   header .search .search-txt {
     position: relative;
     right: 10px;
@@ -97,69 +91,55 @@ body {
     padding-right: 10px;
     font-weight: bold;
   }
-
   section#index #container_index {
     height: 100%;
   }
-
   section#index #container_index .mb-5 {
     margin-bottom: 0rem !important;
   }
-
   section#index #container_index #title-top {
     font-size: 30px;
     position: relative;
     bottom: 41px;
   }
-
   section#index #container_index #title-org {
     font-size: 13px;
   }
-
   section#index #container_index .takhasos {
     font-size: 15px;
   }
-
   section#index #container_index .ability-item {
     font-size: 16px;
   }
-
   section#index #container_index .fas {
     display: none;
   }
-
   section#index #container_index .fab {
     font-size: 17px;
     position: relative;
     bottom: 5px;
   }
-
   section#index #container_index .far {
     font-size: 17px;
     position: relative;
     bottom: 5px;
   }
-
   section#index #container_index .social-item {
     width: 32px;
     height: 30px;
   }
-
   section#info #container_info {
     background-color: white;
     height: 100%;
     width: 100vw;
   }
-
   section#skills #container_skills {
     height: 100%;
     width: 100vw;
   }
-
   section#projects #container_projects {
     height: 100%;
   }
-
   section#projects #container_projects .carousel-inner {
     position: relative;
     bottom: 47px;
@@ -167,88 +147,72 @@ body {
     width: 14.69rem;
     left: 78px;
   }
-
   section#projects #container_projects #carouselExampleDark {
     position: relative;
     bottom: 2rem;
   }
-
   section#projects #container_projects .carousel-indicators {
     width: 30px;
     position: relative;
     right: 1.3rem;
   }
-
   section#projects #container_projects .carousel-indicators {
     position: relative;
     top: 17rem;
   }
-
   section#projects #container_projects .carousel-control-next-icon {
     position: relative;
     bottom: 1.5rem;
     left: 3.5rem;
     height: 26px;
   }
-
   section#projects #container_projects .carousel-control-prev-icon {
     position: relative;
     bottom: 1.5rem;
     right: 3.5rem;
     height: 26px;
   }
-
   section#services #container_services {
     height: 100%;
   }
-
   section#services #container_services .fas,
-section#services #container_services .fab {
+  section#services #container_services .fab {
     font-size: 35px;
   }
-
   section#services #container_services .card {
     height: 82vh;
   }
-
   section#services #container_services .card-text {
     height: 6rem;
     font-size: 13px;
   }
-
   section#services #container_services #btn_card {
     height: 8vh;
     margin-top: 20vh;
     font-size: 12px;
   }
-
   section#call #container_call {
     height: 100%;
   }
-
   section#call #container_call .card-body {
     width: 87vw;
     height: 40rem;
   }
-
   section#call #container_call .card-body h2 {
     font-size: 16px;
     position: absolute;
     top: 22rem;
   }
-
   section#call #container_call .card-body p {
     font-size: 15px;
     width: 15rem;
     position: absolute;
     top: 24rem;
   }
-
   section#call #container_call .card-body .info {
     position: relative;
     top: 3vh;
   }
-
   section#call #container_call .card-body .caption {
     font-size: 13px;
     width: 100%;
@@ -256,7 +220,6 @@ section#services #container_services .fab {
     top: 73vh;
     right: 1rem;
   }
-
   section#call #container_call .card-body .image-container img {
     position: absolute;
     right: 17px;
@@ -264,71 +227,59 @@ section#services #container_services .fab {
     height: 54%;
     top: 1rem;
   }
-
   section#idea #container_idea {
     width: 80%;
     height: 100%;
   }
-
   section#idea #container_idea h4,
-section#idea #container_idea p {
+  section#idea #container_idea p {
     font-size: 16px;
   }
-
   section#idea #container_idea #alert_idea {
     position: relative;
     left: 33px;
     height: 58vh;
     width: 89vw;
   }
-
   section#idea #container_idea .col-4 {
     width: 100%;
   }
-
   section#idea #container_idea .form-control {
     font-size: 10px;
   }
-
   section#idea #container_idea .btn.btn-primary {
     height: 5vh;
     font-size: 12px;
   }
-
   section#idea #container_idea #exampleFormControlTextarea1 {
     height: 15vh;
   }
-
   section#footer footer.bg-dark #container_footer {
     height: 100%;
   }
-
   section#footer footer.bg-dark #container_footer .row.text-center {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-
   section#footer footer.bg-dark #container_footer .col-4 {
     display: contents;
   }
-
   section#footer footer.bg-dark #container_footer .fas {
     font-size: 12px;
   }
-
   section#footer footer.bg-dark p {
     font-size: 16px;
   }
-
   section#footer footer.bg-dark #myBtn {
     display: none;
   }
 }
+
 @media (min-width: 271px) and (max-width: 300px) {
   header .search {
     display: inline-block;
@@ -338,7 +289,7 @@ section#idea #container_idea p {
     height: 30px;
     width: 30px;
     -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+            box-sizing: border-box;
     margin: 0px 8px 7px 0px;
     padding: 7px 9px 0px 9px;
     border: 3px solid #ffffff;
@@ -347,7 +298,6 @@ section#idea #container_idea p {
     transition: all 200ms ease;
     cursor: text;
   }
-
   header .search:after {
     content: "";
     position: absolute;
@@ -358,29 +308,24 @@ section#idea #container_idea p {
     background: #ffffff;
     border-radius: 3px;
     -webkit-transform: rotate(-45deg);
-    transform: rotate(-45deg);
+            transform: rotate(-45deg);
     -webkit-transition: all 200ms ease;
     transition: all 200ms ease;
   }
-
   header .search:after ::-webkit-input-placeholder {
     /* Chrome/Opera/Safari */
     font-size: 5px;
   }
-
   header .search.active, header .search:hover {
     width: 158px;
   }
-
   header .search.active .search-txt, header .search:hover .search-txt {
     width: 140px;
   }
-
   header .search.active:after, header .search:hover:after {
     height: 0px;
     width: 0;
   }
-
   header .search .search-txt {
     position: relative;
     right: 10px;
@@ -401,69 +346,55 @@ section#idea #container_idea p {
     padding-right: 10px;
     font-weight: bold;
   }
-
   section#index #container_index {
     height: 100%;
   }
-
   section#index #container_index .mb-5 {
     margin-bottom: 0rem !important;
   }
-
   section#index #container_index #title-top {
     font-size: 30px;
     position: relative;
     bottom: 41px;
   }
-
   section#index #container_index #title-org {
     font-size: 13px;
   }
-
   section#index #container_index .takhasos {
     font-size: 15px;
   }
-
   section#index #container_index .ability-item {
     font-size: 16px;
   }
-
   section#index #container_index .fas {
     display: none;
   }
-
   section#index #container_index .fab {
     font-size: 17px;
     position: relative;
     bottom: 5px;
   }
-
   section#index #container_index .far {
     font-size: 17px;
     position: relative;
     bottom: 5px;
   }
-
   section#index #container_index .social-item {
     width: 32px;
     height: 30px;
   }
-
   section#info #container_info {
     background-color: white;
     height: 100%;
     width: 100vw;
   }
-
   section#skills #container_skills {
     height: 100%;
     width: 100vw;
   }
-
   section#projects #container_projects {
     height: 100%;
   }
-
   section#projects #container_projects .carousel-inner {
     position: relative;
     bottom: 47px;
@@ -471,90 +402,74 @@ section#idea #container_idea p {
     width: 15.69rem;
     left: 78px;
   }
-
   section#projects #container_projects #carouselExampleDark {
     position: relative;
     bottom: 2rem;
   }
-
   section#projects #container_projects .carousel-indicators {
     width: 30px;
     position: relative;
     right: 1.3rem;
   }
-
   section#projects #container_projects .carousel-indicators {
     position: relative;
     top: 17rem;
   }
-
   section#projects #container_projects .carousel-control-next-icon {
     position: relative;
     bottom: 1.5rem;
     left: 3.5rem;
     height: 26px;
   }
-
   section#projects #container_projects .carousel-control-prev-icon {
     position: relative;
     bottom: 1.5rem;
     right: 3.8rem;
     height: 26px;
   }
-
   section#services #container_services {
     height: 100%;
   }
-
   section#services #container_services .fas,
-section#services #container_services .fab {
+  section#services #container_services .fab {
     font-size: 35px;
   }
-
   section#services #container_services .card {
     height: 82vh;
   }
-
   section#services #container_services .card-text {
     height: 6rem;
     font-size: 13px;
   }
-
   section#services #container_services #btn_card {
     height: 5vh;
     margin-top: 20vh;
     font-size: 12px;
   }
-
   section#call #container_call {
     height: 100%;
   }
-
   section#call #container_call .card-body {
     width: 40rem;
     height: 54rem;
   }
-
   section#call #container_call .card-body h2 {
     font-size: 16px;
     position: absolute;
     top: 22rem;
     right: 21px;
   }
-
   section#call #container_call .card-body p {
     font-size: 15px;
     width: 15rem;
     position: absolute;
     top: 24rem;
   }
-
   section#call #container_call .card-body .info {
     position: relative;
     top: 8vh;
     right: 11rem;
   }
-
   section#call #container_call .card-body .caption {
     font-size: 13px;
     width: 100%;
@@ -562,7 +477,6 @@ section#services #container_services .fab {
     top: 77vh;
     right: 1rem;
   }
-
   section#call #container_call .card-body .image-container img {
     position: absolute;
     right: 0px;
@@ -570,7 +484,6 @@ section#services #container_services .fab {
     height: 43%;
     top: 1rem;
   }
-
   section#call #container_call .card:nth-child(1):before {
     content: "";
     height: 4px;
@@ -582,71 +495,59 @@ section#services #container_services .fab {
     border-top-right-radius: 4px;
     background: #c913ad;
   }
-
   section#idea #container_idea {
     width: 80%;
     height: 100%;
   }
-
   section#idea #container_idea h4,
-section#idea #container_idea p {
+  section#idea #container_idea p {
     font-size: 16px;
   }
-
   section#idea #container_idea #alert_idea {
     position: relative;
     left: 33px;
     height: 58vh;
     width: 89vw;
   }
-
   section#idea #container_idea .col-4 {
     width: 100%;
   }
-
   section#idea #container_idea .form-control {
     font-size: 10px;
   }
-
   section#idea #container_idea .btn.btn-primary {
     height: 5vh;
     font-size: 12px;
   }
-
   section#idea #container_idea #exampleFormControlTextarea1 {
     height: 15vh;
   }
-
   section#footer footer.bg-dark #container_footer {
     height: 100%;
   }
-
   section#footer footer.bg-dark #container_footer .row.text-center {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-
   section#footer footer.bg-dark #container_footer .col-4 {
     display: contents;
   }
-
   section#footer footer.bg-dark #container_footer .fas {
     font-size: 12px;
   }
-
   section#footer footer.bg-dark p {
     font-size: 16px;
   }
-
   section#footer footer.bg-dark #myBtn {
     display: none;
   }
 }
+
 @media (min-width: 301px) and (max-width: 320px) {
   header .search {
     display: inline-block;
@@ -656,7 +557,7 @@ section#idea #container_idea p {
     height: 30px;
     width: 30px;
     -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+            box-sizing: border-box;
     margin: 0px 8px 7px 0px;
     padding: 7px 9px 0px 9px;
     border: 3px solid #ffffff;
@@ -665,7 +566,6 @@ section#idea #container_idea p {
     transition: all 200ms ease;
     cursor: text;
   }
-
   header .search:after {
     content: "";
     position: absolute;
@@ -676,29 +576,24 @@ section#idea #container_idea p {
     background: #ffffff;
     border-radius: 3px;
     -webkit-transform: rotate(-45deg);
-    transform: rotate(-45deg);
+            transform: rotate(-45deg);
     -webkit-transition: all 200ms ease;
     transition: all 200ms ease;
   }
-
   header .search:after ::-webkit-input-placeholder {
     /* Chrome/Opera/Safari */
     font-size: 5px;
   }
-
   header .search.active, header .search:hover {
     width: 158px;
   }
-
   header .search.active .search-txt, header .search:hover .search-txt {
     width: 140px;
   }
-
   header .search.active:after, header .search:hover:after {
     height: 0px;
     width: 0;
   }
-
   header .search .search-txt {
     position: relative;
     right: 10px;
@@ -719,69 +614,55 @@ section#idea #container_idea p {
     padding-right: 10px;
     font-weight: bold;
   }
-
   section#index #container_index {
     height: 100%;
   }
-
   section#index #container_index .mb-5 {
     margin-bottom: 0rem !important;
   }
-
   section#index #container_index #title-top {
     font-size: 30px;
     position: relative;
     bottom: 41px;
   }
-
   section#index #container_index #title-org {
     font-size: 13px;
   }
-
   section#index #container_index .takhasos {
     font-size: 15px;
   }
-
   section#index #container_index .ability-item {
     font-size: 16px;
   }
-
   section#index #container_index .fas {
     display: none;
   }
-
   section#index #container_index .fab {
     font-size: 17px;
     position: relative;
     bottom: 5px;
   }
-
   section#index #container_index .far {
     font-size: 17px;
     position: relative;
     bottom: 5px;
   }
-
   section#index #container_index .social-item {
     width: 32px;
     height: 30px;
   }
-
   section#info #container_info {
     background-color: white;
     height: 100%;
     width: 100vw;
   }
-
   section#skills #container_skills {
     height: 100%;
     width: 100vw;
   }
-
   section#projects #container_projects {
     height: 100%;
   }
-
   section#projects #container_projects .carousel-inner {
     position: relative;
     bottom: 47px;
@@ -789,90 +670,74 @@ section#idea #container_idea p {
     width: 16.69rem;
     left: 78px;
   }
-
   section#projects #container_projects #carouselExampleDark {
     position: relative;
     bottom: 2rem;
   }
-
   section#projects #container_projects .carousel-indicators {
     width: 30px;
     position: relative;
     right: 1.3rem;
   }
-
   section#projects #container_projects .carousel-indicators {
     position: relative;
     top: 17rem;
   }
-
   section#projects #container_projects .carousel-control-next-icon {
     position: relative;
     bottom: 1.5rem;
     left: 3.5rem;
     height: 26px;
   }
-
   section#projects #container_projects .carousel-control-prev-icon {
     position: relative;
     bottom: 1.5rem;
     right: 4rem;
     height: 26px;
   }
-
   section#services #container_services {
     height: 100%;
   }
-
   section#services #container_services .fas,
-section#services #container_services .fab {
+  section#services #container_services .fab {
     font-size: 35px;
   }
-
   section#services #container_services .card {
     height: 82vh;
   }
-
   section#services #container_services .card-text {
     height: 6rem;
     font-size: 13px;
   }
-
   section#services #container_services #btn_card {
     height: 8vh;
     margin-top: 20vh;
     font-size: 12px;
   }
-
   section#call #container_call {
     height: 100%;
   }
-
   section#call #container_call .card-body {
     width: 110vw;
     height: 38rem;
   }
-
   section#call #container_call .card-body h2 {
     font-size: 17px;
     position: absolute;
     top: 22rem;
     right: 20px;
   }
-
   section#call #container_call .card-body p {
     font-size: 15px;
     width: 15rem;
     position: absolute;
     top: 24rem;
   }
-
   section#call #container_call .card-body .info {
     position: relative;
     bottom: 24vh;
     right: 44px;
   }
-
   section#call #container_call .card-body .caption {
     font-size: 13px;
     width: 106%;
@@ -880,7 +745,6 @@ section#services #container_services .fab {
     top: 58vh;
     right: 12px;
   }
-
   section#call #container_call .card-body .image-container img {
     position: absolute;
     right: 15px;
@@ -888,7 +752,6 @@ section#services #container_services .fab {
     height: 35%;
     top: 1rem;
   }
-
   section#call #container_call .card:nth-child(1):before {
     content: "";
     height: 4px;
@@ -900,128 +763,104 @@ section#services #container_services .fab {
     border-top-right-radius: 4px;
     background: #c913ad;
   }
-
   section#idea #container_idea {
     width: 80%;
     height: 100%;
   }
-
   section#idea #container_idea h4,
-section#idea #container_idea p {
+  section#idea #container_idea p {
     font-size: 16px;
   }
-
   section#idea #container_idea #alert_idea {
     position: relative;
     left: 33px;
     height: 58vh;
     width: 89vw;
   }
-
   section#idea #container_idea .col-4 {
     width: 100%;
   }
-
   section#idea #container_idea .form-control {
     font-size: 10px;
   }
-
   section#idea #container_idea .btn.btn-primary {
     height: 5vh;
     font-size: 12px;
   }
-
   section#idea #container_idea #exampleFormControlTextarea1 {
     height: 15vh;
   }
-
   section#footer footer.bg-dark #container_footer {
     height: 100%;
   }
-
   section#footer footer.bg-dark #container_footer .row.text-center {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-
   section#footer footer.bg-dark #container_footer .col-4 {
     display: contents;
   }
-
   section#footer footer.bg-dark #container_footer .fas {
     font-size: 12px;
   }
-
   section#footer footer.bg-dark p {
     font-size: 16px;
   }
-
   section#footer footer.bg-dark #myBtn {
     display: none;
   }
 }
+
 @media (min-width: 321px) and (max-width: 340px) {
   section#index #container_index {
     height: 100%;
   }
-
   section#index #container_index #title-top {
     font-size: 30px;
   }
-
   section#index #container_index #title-org {
     font-size: 19px;
   }
-
   section#index #container_index .takhasos {
     font-size: 15px;
   }
-
   section#index #container_index .ability-item {
     font-size: 16px;
   }
-
   section#index #container_index .fas {
     display: none;
   }
-
   section#index #container_index .fab {
     font-size: 17px;
     position: relative;
     bottom: 5px;
   }
-
   section#index #container_index .far {
     font-size: 17px;
     position: relative;
     bottom: 5px;
   }
-
   section#index #container_index .social-item {
     width: 35px;
     height: 30px;
   }
-
   section#info #container_info {
     background-color: white;
     height: 100%;
     width: 100vw;
   }
-
   section#skills #container_skills {
     height: 100%;
     width: 100vw;
   }
-
   section#projects #container_projects {
     height: 100%;
   }
-
   section#projects #container_projects .carousel-inner {
     position: relative;
     bottom: 53px;
@@ -1029,210 +868,169 @@ section#idea #container_idea p {
     width: 18rem;
     left: 87px;
   }
-
   section#projects #container_projects #carouselExampleDark {
     position: relative;
     bottom: 2rem;
   }
-
   section#projects #container_projects .carousel-indicators {
     width: 30px;
     position: relative;
     right: 2.3rem;
   }
-
   section#projects #container_projects .carousel-indicators {
     position: relative;
     top: 7rem;
   }
-
   section#projects #container_projects .carousel-control-next-icon {
     position: relative;
     bottom: 1.5rem;
     left: 4.5rem;
     height: 10px;
   }
-
   section#projects #container_projects .carousel-control-prev-icon {
     position: relative;
     bottom: 1.5rem;
     right: 4.5rem;
     height: 10px;
   }
-
   section#services #container_services {
     height: 100%;
   }
-
   section#services #container_services #btn_card {
     margin-top: 8vh;
   }
-
   section#services #container_services .fas,
-section#services #container_services .fab {
+  section#services #container_services .fab {
     font-size: 35px;
   }
-
   section#services #container_services .card {
     height: 65vh;
   }
-
   section#services #container_services .card-text {
     height: 5rem;
   }
-
   section#call #container_call {
     height: 100%;
   }
-
   section#call #container_call .card-body {
     width: 89vw;
   }
-
   section#call #container_call .card-body h2 {
     font-size: 13px;
   }
-
   section#call #container_call .card-body p {
     font-size: 13px;
   }
-
   section#call #container_call .card-body .info {
     position: relative;
     top: 7vh;
   }
-
   section#call #container_call .card-body .caption {
     font-size: 10px;
     width: 50%;
   }
-
   section#call #container_call .card-body .image-container img {
     width: 44%;
     height: 75%;
   }
-
   section#idea #container_idea {
     width: 80%;
     height: 100%;
   }
-
   section#idea #container_idea h4,
-section#idea #container_idea p {
+  section#idea #container_idea p {
     font-size: 16px;
   }
-
   section#idea #container_idea #alert_idea {
     width: 88vw;
     position: relative;
     left: 2rem;
     height: 100%;
   }
-
   section#idea #container_idea .col-4 {
     width: 100%;
   }
-
   section#idea #container_idea .form-control {
     font-size: 8px;
   }
-
   section#idea #container_idea .btn.btn-primary {
     height: 4vh;
     font-size: 8px;
   }
-
   section#idea #container_idea #exampleFormControlTextarea1 {
     height: 100%;
   }
-
   section#footer footer.bg-dark #container_footer {
     height: 100%;
   }
-
   section#footer footer.bg-dark #container_footer .row.text-center {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-
   section#footer footer.bg-dark #container_footer .col-4 {
     display: contents;
   }
-
   section#footer footer.bg-dark #container_footer .fas {
     font-size: 25px;
   }
-
   section#footer footer.bg-dark p {
     font-size: 16px;
   }
-
   section#footer footer.bg-dark #myBtn {
     display: none;
   }
 }
+
 @media (min-width: 340px) and (max-width: 359px) {
   section#index #container_index {
     height: 100%;
   }
-
   section#index #container_index #title-top {
     font-size: 30px;
   }
-
   section#index #container_index #title-org {
     font-size: 19px;
   }
-
   section#index #container_index .takhasos {
     font-size: 15px;
   }
-
   section#index #container_index .ability-item {
     font-size: 16px;
   }
-
   section#index #container_index .fas {
     display: none;
   }
-
   section#index #container_index .fab {
     font-size: 17px;
     position: relative;
     bottom: 5px;
   }
-
   section#index #container_index .far {
     font-size: 17px;
     position: relative;
     bottom: 5px;
   }
-
   section#index #container_index .social-item {
     width: 35px;
     height: 30px;
   }
-
   section#info #container_info {
     background-color: white;
     height: 100%;
     width: 100vw;
   }
-
   section#skills #container_skills {
     height: 100%;
     width: 100vw;
   }
-
   section#projects #container_projects {
     height: 100%;
   }
-
   section#projects #container_projects .carousel-inner {
     position: relative;
     bottom: 53px;
@@ -1240,214 +1038,173 @@ section#idea #container_idea p {
     width: 19rem;
     left: 87px;
   }
-
   section#projects #container_projects #carouselExampleDark {
     position: relative;
     bottom: 2rem;
   }
-
   section#projects #container_projects .carousel-indicators {
     width: 30px;
     position: relative;
     right: 2.3rem;
   }
-
   section#projects #container_projects .carousel-indicators {
     position: relative;
     top: 7rem;
   }
-
   section#projects #container_projects .carousel-control-next-icon {
     position: relative;
     bottom: 1.5rem;
     left: 4.5rem;
     height: 10px;
   }
-
   section#projects #container_projects .carousel-control-prev-icon {
     position: relative;
     bottom: 1.5rem;
     right: 4.3rem;
     height: 10px;
   }
-
   section#services #container_services {
     height: 100%;
   }
-
   section#services #container_services #btn_card {
     margin-top: 8vh;
   }
-
   section#services #container_services .fas,
-section#services #container_services .fab {
+  section#services #container_services .fab {
     font-size: 35px;
   }
-
   section#services #container_services .card {
     height: 65vh;
   }
-
   section#services #container_services .card-text {
     height: 5rem;
   }
-
   section#call #container_call {
     height: 100%;
   }
-
   section#call #container_call .card-body {
     width: 89vw;
   }
-
   section#call #container_call .card-body h2 {
     font-size: 13px;
   }
-
   section#call #container_call .card-body p {
     font-size: 13px;
   }
-
   section#call #container_call .card-body .info {
     position: relative;
     top: 7vh;
   }
-
   section#call #container_call .card-body .caption {
     font-size: 10px;
     width: 50%;
   }
-
   section#call #container_call .card-body .image-container img {
     width: 44%;
     height: 75%;
   }
-
   section#idea #container_idea {
     width: 80%;
     height: 100%;
   }
-
   section#idea #container_idea h4,
-section#idea #container_idea p {
+  section#idea #container_idea p {
     font-size: 16px;
   }
-
   section#idea #container_idea #alert_idea {
     width: 88vw;
     position: relative;
     left: 2rem;
     height: 100%;
   }
-
   section#idea #container_idea .col-4 {
     width: 100%;
   }
-
   section#idea #container_idea .form-control {
     font-size: 8px;
   }
-
   section#idea #container_idea .btn.btn-primary {
     height: 4vh;
     font-size: 8px;
   }
-
   section#idea #container_idea #exampleFormControlTextarea1 {
     height: 100%;
   }
-
   section#footer footer.bg-dark #container_footer {
     height: 100%;
   }
-
   section#footer footer.bg-dark #container_footer .row.text-center {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-
   section#footer footer.bg-dark #container_footer .col-4 {
     display: contents;
   }
-
   section#footer footer.bg-dark #container_footer .fas {
     font-size: 25px;
   }
-
   section#footer footer.bg-dark p {
     font-size: 16px;
   }
-
   section#footer footer.bg-dark #myBtn {
     display: none;
   }
 }
+
 @media (min-width: 360px) and (max-width: 375px) {
   section#index #container_index {
     height: 100%;
   }
-
   section#index #container_index #title-top {
     font-size: 30px;
   }
-
   section#index #container_index #title-org {
     font-size: 19px;
   }
-
   section#index #container_index .takhasos {
     font-size: 15px;
   }
-
   section#index #container_index .ability-item {
     font-size: 16px;
   }
-
   section#index #container_index .fas {
     display: none;
   }
-
   section#index #container_index .fab {
     font-size: 17px;
     position: relative;
     bottom: 5px;
   }
-
   section#index #container_index .far {
     font-size: 17px;
     position: relative;
     bottom: 5px;
   }
-
   section#index #container_index .social-item {
     width: 35px;
     height: 30px;
   }
-
   section#info #container_info {
     background-color: white;
     height: 100%;
     width: 100%;
   }
-
   section#skills #container_skills {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     height: 100%;
     width: 100%;
   }
-
   section#projects #container_projects {
     height: 100%;
   }
-
   section#projects #container_projects .carousel-inner {
     position: relative;
     bottom: 47px;
@@ -1455,88 +1212,72 @@ section#idea #container_idea p {
     width: 322px;
     left: 93px;
   }
-
   section#projects #container_projects #carouselExampleDark {
     position: relative;
     bottom: 2rem;
   }
-
   section#projects #container_projects .carousel-indicators {
     width: 30px;
     position: relative;
     right: 2.3rem;
   }
-
   section#projects #container_projects .carousel-indicators {
     position: relative;
     top: 17rem;
   }
-
   section#projects #container_projects .carousel-control-next-icon {
     position: relative;
     bottom: 1.5rem;
     left: 4.5rem;
     height: 20px;
   }
-
   section#projects #container_projects .carousel-control-prev-icon {
     position: relative;
     bottom: 1.5rem;
     right: 4.5rem;
     height: 20px;
   }
-
   section#services #container_services {
     height: 100%;
   }
-
   section#services #container_services .fas,
-section#services #container_services .fab {
+  section#services #container_services .fab {
     font-size: 35px;
   }
-
   section#services #container_services .card {
     height: 63vh;
   }
-
   section#services #container_services #btn_card {
     margin-top: 3vh;
   }
-
   section#call #container_call {
     height: 100%;
   }
-
   section#call #container_call .row {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
-
   section#call #container_call .row .card-body {
     width: 89vw;
     height: 684px;
     position: relative;
     right: 12px;
   }
-
   section#call #container_call .row .card-body h2 {
     font-size: 20px;
     position: relative;
     right: 14px;
   }
-
   section#call #container_call .row .card-body p {
     font-size: 15px;
   }
-
   section#call #container_call .row .card-body .info {
     position: relative;
     top: 36vh;
     right: 17px;
   }
-
   section#call #container_call .row .card-body .caption {
     position: absolute;
     right: 22px;
@@ -1544,7 +1285,6 @@ section#services #container_services .fab {
     font-size: 14px;
     width: 100%;
   }
-
   section#call #container_call .row .card-body .image-container img {
     border-radius: 20%;
     border: 3px solid #fdfdfd;
@@ -1554,11 +1294,10 @@ section#services #container_services .fab {
     right: 72px;
     top: 38px;
   }
-
   section#call #container_call .row .card-body .image-container img:hover {
     cursor: pointer;
     -webkit-box-shadow: 0px 0px 20px #ffffff;
-    box-shadow: 0px 0px 20px #ffffff;
+            box-shadow: 0px 0px 20px #ffffff;
     z-index: 2;
     -webkit-transition: all 200ms ease-in;
     -webkit-transform: scale(1.05);
@@ -1570,7 +1309,6 @@ section#services #container_services .fab {
     transition: all 500ms ease-in;
     transform: scale(1.05);
   }
-
   section#call #container_call .row .card:nth-child(1):before {
     content: "";
     height: 4px;
@@ -1582,127 +1320,103 @@ section#services #container_services .fab {
     border-top-right-radius: 4px;
     background: #c913ad;
   }
-
   section#idea #container_idea {
     width: 80%;
     height: 100%;
   }
-
   section#idea #container_idea h4,
-section#idea #container_idea p {
+  section#idea #container_idea p {
     font-size: 16px;
   }
-
   section#idea #container_idea #alert_idea {
     position: relative;
     height: 57vh;
     right: 0.3vh;
   }
-
   section#idea #container_idea .col-4 {
     width: 100%;
   }
-
   section#idea #container_idea .form-control {
     font-size: 10px;
   }
-
   section#idea #container_idea .btn.btn-primary {
     height: 5vh;
     font-size: 12px;
   }
-
   section#idea #container_idea #exampleFormControlTextarea1 {
     height: 15vh;
   }
-
   section#footer footer.bg-dark #container_footer {
     height: 100%;
   }
-
   section#footer footer.bg-dark #container_footer .row.text-center {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-
   section#footer footer.bg-dark #container_footer .col-4 {
     display: contents;
   }
-
   section#footer footer.bg-dark #container_footer .fas {
     font-size: 30px;
   }
-
   section#footer footer.bg-dark p {
     font-size: 16px;
   }
-
   section#footer footer.bg-dark #myBtn {
     display: none;
   }
 }
+
 @media (min-width: 376px) and (max-width: 414px) {
   section#index #container_index {
     height: 100%;
   }
-
   section#index #container_index #title-top {
     font-size: 30px;
   }
-
   section#index #container_index #title-org {
     font-size: 19px;
   }
-
   section#index #container_index .takhasos {
     font-size: 15px;
   }
-
   section#index #container_index .ability-item {
     font-size: 16px;
   }
-
   section#index #container_index .fas {
     display: none;
   }
-
   section#index #container_index .fab {
     font-size: 17px;
     position: relative;
     bottom: 5px;
   }
-
   section#index #container_index .far {
     font-size: 17px;
     position: relative;
     bottom: 5px;
   }
-
   section#index #container_index .social-item {
     width: 35px;
     height: 30px;
   }
-
   section#info #container_info {
     background-color: white;
     height: 100%;
     width: 100vw;
   }
-
   section#skills #container_skills {
     height: 100%;
     width: 100vw;
   }
-
   section#projects #container_projects {
     height: 100%;
   }
-
   section#projects #container_projects .carousel-inner {
     position: relative;
     bottom: 47px;
@@ -1710,84 +1424,68 @@ section#idea #container_idea p {
     width: 345px;
     left: 93px;
   }
-
   section#projects #container_projects #carouselExampleDark {
     position: relative;
     bottom: 2rem;
   }
-
   section#projects #container_projects .carousel-indicators {
     width: 30px;
     position: relative;
     right: 2.3rem;
   }
-
   section#projects #container_projects .carousel-indicators {
     position: relative;
     top: 17rem;
   }
-
   section#projects #container_projects .carousel-control-next-icon {
     position: relative;
     bottom: 1.5rem;
     left: 4.5rem;
     height: 30px;
   }
-
   section#projects #container_projects .carousel-control-prev-icon {
     position: relative;
     bottom: 1.5rem;
     right: 4.5rem;
     height: 30px;
   }
-
   section#services #container_services {
     height: 100%;
   }
-
   section#services #container_services .fas,
-section#services #container_services .fab {
+  section#services #container_services .fab {
     font-size: 35px;
   }
-
   section#services #container_services .card {
     height: 53vh;
   }
-
   section#services #container_services h5.card-title {
     font-size: 20px;
   }
-
   section#services #container_services #btn_card {
     margin-top: 1vh;
   }
-
   section#call #container_call {
     height: 100%;
   }
-
   section#call #container_call .card-body {
     width: 89vw;
     height: 684px;
     margin-right: 23px;
   }
-
   section#call #container_call .card-body h2 {
     font-size: 20px;
     position: relative;
     right: 14px;
   }
-
   section#call #container_call .card-body p {
     font-size: 15px;
   }
-
   section#call #container_call .card-body .info {
     position: relative;
     top: 36vh;
     right: 40px;
   }
-
   section#call #container_call .card-body .caption {
     position: absolute;
     right: 30px;
@@ -1795,7 +1493,6 @@ section#services #container_services .fab {
     font-size: 15px;
     width: 100%;
   }
-
   section#call #container_call .card-body .image-container img {
     border-radius: 20%;
     border: 3px solid #fdfdfd;
@@ -1805,11 +1502,10 @@ section#services #container_services .fab {
     right: 70px;
     top: 38px;
   }
-
   section#call #container_call .card-body .image-container img:hover {
     cursor: pointer;
     -webkit-box-shadow: 0px 0px 20px #ffffff;
-    box-shadow: 0px 0px 20px #ffffff;
+            box-shadow: 0px 0px 20px #ffffff;
     z-index: 2;
     -webkit-transition: all 200ms ease-in;
     -webkit-transform: scale(1.05);
@@ -1821,7 +1517,6 @@ section#services #container_services .fab {
     transition: all 500ms ease-in;
     transform: scale(1.05);
   }
-
   section#call #container_call .card:nth-child(1):before {
     content: "";
     height: 4px;
@@ -1834,171 +1529,136 @@ section#services #container_services .fab {
     background: #c913ad;
     margin-right: 25px;
   }
-
   section#idea #container_idea {
     width: 80%;
     height: 100%;
   }
-
   section#idea #container_idea h4,
-section#idea #container_idea p {
+  section#idea #container_idea p {
     font-size: 16px;
   }
-
   section#idea #container_idea #alert_idea {
     position: unset;
     height: 48vh;
   }
-
   section#idea #container_idea .col-4 {
     width: 100%;
   }
-
   section#idea #container_idea .form-control {
     font-size: 10px;
   }
-
   section#idea #container_idea .btn.btn-primary {
     height: 5vh;
     font-size: 12px;
   }
-
   section#idea #container_idea #exampleFormControlTextarea1 {
     height: 100%;
   }
-
   section#footer footer.bg-dark #container_footer {
     height: 100%;
   }
-
   section#footer footer.bg-dark #container_footer .row.text-center {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-
   section#footer footer.bg-dark #container_footer .col-4 {
     display: contents;
   }
-
   section#footer footer.bg-dark #container_footer .fas {
     font-size: 21px;
   }
-
   section#footer footer.bg-dark p {
     font-size: 19px;
   }
-
   section#footer footer.bg-dark #myBtn {
     display: none;
   }
 }
+
 @media (min-width: 415px) and (max-width: 539px) {
   section#index #container_index {
     height: 100%;
   }
-
   section#index #container_index #title-top {
     font-size: 52px;
   }
-
   section#index #container_index #title-org {
     font-size: 30px;
   }
-
   section#index #container_index .takhasos {
     font-size: 30px;
   }
-
   section#index #container_index .ability-item {
     font-size: 30px;
   }
-
   section#index #container_index .fas {
     display: none;
   }
-
   section#index #container_index .fab {
     font-size: 34px;
     position: relative;
     bottom: 0px;
   }
-
   section#index #container_index .far {
     font-size: 34px;
     position: relative;
     bottom: 0px;
   }
-
   section#index #container_index .social-item {
     width: 60px;
     height: 60px;
   }
-
   section#info #container_info {
     background-color: white;
     height: 100%;
     width: 100vw;
   }
-
   section#info #container_info h2 {
     font-size: 50px;
   }
-
   section#info #container_info p {
     font-size: 30px;
   }
-
   section#info #container_info .btn,
-section#info #container_info .btn-outline-primary {
+  section#info #container_info .btn-outline-primary {
     font-size: 30px;
   }
-
   section#info #container_info .fas {
     font-size: 40px;
   }
-
   section#info #container_info h3 {
     font-size: 25px;
   }
-
   section#info #container_info p {
     font-size: 25px;
   }
-
   section#skills #container_skills {
     height: 100%;
     width: 100vw;
   }
-
   section#skills #container_skills h2 {
     font-size: 50px;
   }
-
   section#skills #container_skills p {
     font-size: 30px;
   }
-
   section#skills #container_skills h5 {
     font-size: 40px;
   }
-
   section#projects #container_projects {
     height: 100%;
   }
-
   section#projects #container_projects h2 {
     font-size: 50px;
   }
-
   section#projects #container_projects p {
     font-size: 30px;
   }
-
   section#projects #container_projects .carousel-inner {
     position: relative;
     bottom: 47px;
@@ -2006,286 +1666,228 @@ section#info #container_info .btn-outline-primary {
     width: 68vw;
     left: 93px;
   }
-
   section#projects #container_projects #carouselExampleDark {
     position: relative;
     bottom: 2rem;
   }
-
   section#projects #container_projects .carousel-indicators {
     width: 30px;
     position: relative;
     right: 2.3rem;
   }
-
   section#projects #container_projects .carousel-indicators {
     position: relative;
     top: 6rem;
   }
-
   section#projects #container_projects .carousel-control-next-icon {
     position: relative;
     bottom: 1.5rem;
     left: 4.5rem;
     height: 50px;
   }
-
   section#projects #container_projects .carousel-control-prev-icon {
     position: relative;
     bottom: 1.5rem;
     right: 4.5rem;
     height: 50px;
   }
-
   section#services #container_services {
     height: 100%;
   }
-
   section#services #container_services h2 {
     font-size: 50px;
   }
-
   section#services #container_services p {
     font-size: 30px;
   }
-
   section#services #container_services .fas,
-section#services #container_services .fab {
+  section#services #container_services .fab {
     font-size: 80px;
   }
-
   section#services #container_services .card {
     height: 68vh;
   }
-
   section#services #container_services h5.card-title {
     font-size: 30px;
   }
-
   section#services #container_services .card-text {
     height: 6rem;
     font-size: 30px;
     line-height: 50px;
   }
-
   section#services #container_services #btn_card {
     margin-top: 19vh;
     font-size: 30px;
   }
-
   section#call #container_call {
     height: 100%;
   }
-
   section#call #container_call h2 {
     font-size: 50px;
   }
-
   section#call #container_call p {
     font-size: 30px;
   }
-
   section#call #container_call .card-body {
     width: 93vw;
     height: 44vh;
     position: relative;
     left: 146px;
   }
-
   section#call #container_call .card-body h2 {
     font-size: 34px;
   }
-
   section#call #container_call .card-body p {
     font-size: 32px;
   }
-
   section#call #container_call .card-body .info {
     position: relative;
     top: 7vh;
   }
-
   section#call #container_call .card-body .caption {
     font-size: 22px;
     width: 43%;
   }
-
   section#call #container_call .card-body .image-container img {
     width: 50%;
     height: 80%;
     position: absolute;
     right: 21rem;
   }
-
   section#idea #container_idea {
     width: 80%;
     height: 100%;
   }
-
   section#idea #container_idea h4,
-section#idea #container_idea p {
+  section#idea #container_idea p {
     font-size: 25px;
   }
-
   section#idea #container_idea #alert_idea {
     position: unset;
     height: 60vh;
   }
-
   section#idea #container_idea .col-4 {
     width: 100%;
   }
-
   section#idea #container_idea .form-control {
     font-size: 21px;
   }
-
   section#idea #container_idea .btn.btn-primary {
     height: 5vh;
     font-size: 12px;
   }
-
   section#idea #container_idea #exampleFormControlTextarea1 {
     height: 26vh;
   }
-
   section#footer footer.bg-dark #container_footer {
     height: 100%;
   }
-
   section#footer footer.bg-dark #container_footer .row.text-center {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-
   section#footer footer.bg-dark #container_footer .col-4 {
     display: contents;
   }
-
   section#footer footer.bg-dark #container_footer .fas {
     font-size: 35px;
   }
-
   section#footer footer.bg-dark p {
     font-size: 30px;
   }
-
   section#footer footer.bg-dark .btn {
     font-size: 25px;
   }
-
   section#footer footer.bg-dark #myBtn {
     display: none;
   }
 }
+
 @media (min-width: 540px) and (max-width: 767px) {
   section#index #container_index {
     height: 100%;
   }
-
   section#index #container_index #title-top {
     font-size: 36px;
   }
-
   section#index #container_index #title-org {
     margin-top: 3rem;
     font-size: 25px;
   }
-
   section#index #container_index .takhasos {
     font-size: 20px;
   }
-
   section#index #container_index .ability-item {
     font-size: 20px;
   }
-
   section#index #container_index .fas {
     display: none;
   }
-
   section#index #container_index .fab {
     font-size: 25px;
     position: relative;
     bottom: 0px;
   }
-
   section#index #container_index .far {
     font-size: 25px;
     position: relative;
     bottom: 0px;
   }
-
   section#index #container_index .social-item {
     width: 60px;
     height: 60px;
   }
-
   section#index #container_index .mb-5 {
     margin-bottom: 0rem !important;
   }
-
   section#info #container_info {
     background-color: white;
     height: 100%;
     width: 100vw;
   }
-
   section#info #container_info h2 {
     font-size: 38px;
   }
-
   section#info #container_info p {
     font-size: 20px;
   }
-
   section#info #container_info .btn,
-section#info #container_info .btn-outline-primary {
+  section#info #container_info .btn-outline-primary {
     font-size: 30px;
   }
-
   section#info #container_info .fas {
     font-size: 40px;
   }
-
   section#info #container_info h3 {
     font-size: 25px;
   }
-
   section#skills #container_skills {
     height: 100%;
     width: 100vw;
   }
-
   section#skills #container_skills h2 {
     font-size: 38px;
   }
-
   section#skills #container_skills p {
     font-size: 25px;
   }
-
   section#skills #container_skills h5 {
     font-size: 30px;
   }
-
   section#projects #container_projects {
     height: 100%;
   }
-
   section#projects #container_projects h2 {
     font-size: 38px;
   }
-
   section#projects #container_projects p {
     font-size: 23px;
   }
-
   section#projects #container_projects .carousel-inner {
     position: relative;
     bottom: 47px;
@@ -2293,95 +1895,77 @@ section#info #container_info .btn-outline-primary {
     width: 92vw;
     left: 136px;
   }
-
   section#projects #container_projects #carouselExampleDark {
     position: relative;
     bottom: 2rem;
   }
-
   section#projects #container_projects .carousel-indicators {
     width: 70px;
     position: relative;
     right: 2.5rem;
     top: 17rem;
   }
-
   section#projects #container_projects .carousel-control-next-icon {
     position: relative;
     bottom: 1.5rem;
     left: 7.5rem;
     height: 50px;
   }
-
   section#projects #container_projects .carousel-control-prev-icon {
     position: relative;
     bottom: 1.5rem;
     right: 7.5rem;
     height: 50px;
   }
-
   section#services #container_services {
     height: 100%;
   }
-
   section#services #container_services h2 {
     font-size: 38px;
   }
-
   section#services #container_services p {
     font-size: 25px;
   }
-
   section#services #container_services .fas,
-section#services #container_services .fab {
+  section#services #container_services .fab {
     font-size: 55px;
   }
-
   section#services #container_services .card {
     height: 70vh;
   }
-
   section#services #container_services h5.card-title {
     font-size: 30px;
   }
-
   section#services #container_services .card-text {
     height: 6rem;
     font-size: 24px;
   }
-
   section#services #container_services #btn_card {
     margin-top: 15vh;
     font-size: 30px;
   }
-
   section#call #container_call {
     height: 100%;
   }
-
   section#call #container_call .card-body {
     width: 89vw;
     height: 64rem;
     margin-right: 23px;
   }
-
   section#call #container_call .card-body h2 {
     font-size: 34px;
     position: relative;
     right: 33px;
   }
-
   section#call #container_call .card-body p {
     font-size: 25px;
   }
-
   section#call #container_call .card-body .info {
     position: relative;
     top: 48vh;
     right: 3rem;
     line-height: 3rem;
   }
-
   section#call #container_call .card-body .caption {
     position: absolute;
     right: 54px;
@@ -2390,7 +1974,6 @@ section#services #container_services .fab {
     width: 132%;
     line-height: 4rem;
   }
-
   section#call #container_call .card-body .image-container img {
     border-radius: 20%;
     border: 3px solid #fdfdfd;
@@ -2400,11 +1983,10 @@ section#services #container_services .fab {
     right: 106px;
     top: 46px;
   }
-
   section#call #container_call .card-body .image-container img:hover {
     cursor: pointer;
     -webkit-box-shadow: 0px 0px 20px #ffffff;
-    box-shadow: 0px 0px 20px #ffffff;
+            box-shadow: 0px 0px 20px #ffffff;
     z-index: 2;
     -webkit-transition: all 200ms ease-in;
     -webkit-transform: scale(1.05);
@@ -2416,7 +1998,6 @@ section#services #container_services .fab {
     transition: all 500ms ease-in;
     transform: scale(1.05);
   }
-
   section#call #container_call .card:nth-child(1):before {
     content: "";
     height: 4px;
@@ -2429,171 +2010,136 @@ section#services #container_services .fab {
     background: #c913ad;
     margin-right: 25px;
   }
-
   section#idea #container_idea {
     width: 80%;
     height: 100%;
   }
-
   section#idea #container_idea h4,
-section#idea #container_idea p {
+  section#idea #container_idea p {
     font-size: 28px;
   }
-
   section#idea #container_idea #alert_idea {
     position: unset;
     height: 74vh;
   }
-
   section#idea #container_idea .col-4 {
     width: 100%;
   }
-
   section#idea #container_idea .form-control {
     font-size: 21px;
   }
-
   section#idea #container_idea .btn.btn-primary {
     height: 7vh;
     font-size: 18px;
   }
-
   section#idea #container_idea #exampleFormControlTextarea1 {
     height: 26vh;
   }
-
   section#footer footer.bg-dark #container_footer {
     height: 100%;
   }
-
   section#footer footer.bg-dark #container_footer .row.text-center {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-
   section#footer footer.bg-dark #container_footer .col-4 {
     display: contents;
   }
-
   section#footer footer.bg-dark #container_footer .fas {
     font-size: 30px;
   }
-
   section#footer footer.bg-dark p {
     font-size: 21px;
   }
-
   section#footer footer.bg-dark .btn {
     font-size: 25px;
   }
-
   section#footer footer.bg-dark #myBtn {
     display: none;
   }
 }
+
 @media (min-width: 768px) and (max-width: 790px) {
   section#index #container_index {
     height: 100%;
   }
-
   section#index #container_index #title-top {
     font-size: 40px;
   }
-
   section#index #container_index #title-org {
     font-size: 35px;
   }
-
   section#index #container_index .takhasos {
     font-size: 35px;
   }
-
   section#index #container_index .ability-item {
     font-size: 35px;
   }
-
   section#index #container_index .fas {
     display: none;
   }
-
   section#index #container_index .fab {
     font-size: 25px;
     position: relative;
     bottom: 0px;
   }
-
   section#index #container_index .far {
     font-size: 25px;
     position: relative;
     bottom: 0px;
   }
-
   section#index #container_index .social-item {
     width: 60px;
     height: 60px;
   }
-
   section#info #container_info {
     background-color: white;
     height: 100%;
     width: 100vw;
   }
-
   section#info #container_info h2 {
     font-size: 38px;
   }
-
   section#info #container_info p {
     font-size: 20px;
   }
-
   section#info #container_info .btn,
-section#info #container_info .btn-outline-primary {
+  section#info #container_info .btn-outline-primary {
     font-size: 30px;
   }
-
   section#info #container_info .fas {
     font-size: 40px;
   }
-
   section#info #container_info h3 {
     font-size: 25px;
   }
-
   section#skills #container_skills {
     height: 100%;
     width: 100vw;
   }
-
   section#skills #container_skills h2 {
     font-size: 38px;
   }
-
   section#skills #container_skills p {
     font-size: 25px;
   }
-
   section#skills #container_skills h5 {
     font-size: 30px;
   }
-
   section#projects #container_projects {
     height: 100%;
   }
-
   section#projects #container_projects h2 {
     font-size: 38px;
   }
-
   section#projects #container_projects p {
     font-size: 23px;
   }
-
   section#projects #container_projects .carousel-inner {
     position: relative;
     bottom: 47px;
@@ -2601,95 +2147,77 @@ section#info #container_info .btn-outline-primary {
     width: 92vw;
     left: 184px;
   }
-
   section#projects #container_projects #carouselExampleDark {
     position: relative;
     bottom: 2rem;
   }
-
   section#projects #container_projects .carousel-indicators {
     width: 95px;
     position: relative;
     right: 4.5rem;
     top: 17rem;
   }
-
   section#projects #container_projects .carousel-control-next-icon {
     position: relative;
     bottom: 1.5rem;
     left: 10.5rem;
     height: 50px;
   }
-
   section#projects #container_projects .carousel-control-prev-icon {
     position: relative;
     bottom: 1.5rem;
     right: 10.5rem;
     height: 50px;
   }
-
   section#services #container_services {
     height: 100%;
   }
-
   section#services #container_services h2 {
     font-size: 38px;
   }
-
   section#services #container_services p {
     font-size: 25px;
   }
-
   section#services #container_services .fas,
-section#services #container_services .fab {
+  section#services #container_services .fab {
     font-size: 64px;
   }
-
   section#services #container_services .card {
     height: 75vh;
   }
-
   section#services #container_services h5.card-title {
     font-size: 36px;
   }
-
   section#services #container_services .card-text {
     height: 6rem;
     font-size: 38px;
     line-height: 91px;
   }
-
   section#services #container_services #btn_card {
     margin-top: 29vh;
     font-size: 30px;
   }
-
   section#call #container_call {
     height: 100%;
   }
-
   section#call #container_call .card-body {
     width: 89vw;
     height: 64rem;
     margin-right: 23px;
   }
-
   section#call #container_call .card-body h2 {
     font-size: 35px;
     position: relative;
     right: 14px;
   }
-
   section#call #container_call .card-body p {
     font-size: 28px;
   }
-
   section#call #container_call .card-body .info {
     position: relative;
     top: 45vh;
     right: 9rem;
   }
-
   section#call #container_call .card-body .caption {
     position: absolute;
     right: 0px;
@@ -2698,7 +2226,6 @@ section#services #container_services .fab {
     width: 125%;
     line-height: 3rem;
   }
-
   section#call #container_call .card-body .image-container img {
     border-radius: 20%;
     border: 3px solid #fdfdfd;
@@ -2708,11 +2235,10 @@ section#services #container_services .fab {
     right: 11px;
     top: 46px;
   }
-
   section#call #container_call .card-body .image-container img:hover {
     cursor: pointer;
     -webkit-box-shadow: 0px 0px 20px #ffffff;
-    box-shadow: 0px 0px 20px #ffffff;
+            box-shadow: 0px 0px 20px #ffffff;
     z-index: 2;
     -webkit-transition: all 200ms ease-in;
     -webkit-transform: scale(1.05);
@@ -2724,7 +2250,6 @@ section#services #container_services .fab {
     transition: all 500ms ease-in;
     transform: scale(1.05);
   }
-
   section#call #container_call .card:nth-child(1):before {
     content: "";
     height: 4px;
@@ -2737,130 +2262,105 @@ section#services #container_services .fab {
     background: #c913ad;
     margin-right: 25px;
   }
-
   section#idea #container_idea {
     width: 80%;
     height: 100%;
   }
-
   section#idea #container_idea h4,
-section#idea #container_idea p {
+  section#idea #container_idea p {
     font-size: 28px;
   }
-
   section#idea #container_idea #alert_idea {
     position: unset;
     height: 70vh;
   }
-
   section#idea #container_idea .col-4 {
     width: 100%;
   }
-
   section#idea #container_idea .form-control {
     font-size: 21px;
   }
-
   section#idea #container_idea .btn.btn-primary {
     height: 5vh;
     font-size: 24px;
   }
-
   section#idea #container_idea #exampleFormControlTextarea1 {
     height: 26vh;
   }
-
   section#footer footer.bg-dark #container_footer {
     height: 100%;
   }
-
   section#footer footer.bg-dark #container_footer .row.text-center {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-
   section#footer footer.bg-dark #container_footer .col-4 {
     display: contents;
   }
-
   section#footer footer.bg-dark #container_footer .fas {
     font-size: 40px;
   }
-
   section#footer footer.bg-dark p {
     font-size: 35px;
   }
-
   section#footer footer.bg-dark .btn {
     font-size: 25px;
   }
-
   section#footer footer.bg-dark #myBtn {
     display: none;
   }
 }
+
 @media (min-width: 791px) and (max-width: 832px) {
   section#index #container_index {
     height: 100%;
   }
-
   section#index #container_index #title-top {
     font-size: 30px;
   }
-
   section#index #container_index #title-org {
     font-size: 19px;
   }
-
   section#index #container_index .takhasos {
     font-size: 15px;
   }
-
   section#index #container_index .ability-item {
     font-size: 16px;
   }
-
   section#index #container_index .fas {
     display: none;
   }
-
   section#index #container_index .fab {
     font-size: 17px;
     position: relative;
     bottom: 5px;
   }
-
   section#index #container_index .far {
     font-size: 17px;
     position: relative;
     bottom: 5px;
   }
-
   section#index #container_index .social-item {
     width: 35px;
     height: 30px;
   }
-
   section#info #container_info {
     background-color: white;
     height: 100%;
     width: 100vw;
   }
-
   section#skills #container_skills {
     height: 100%;
     width: 100vw;
   }
-
   section#projects #container_projects {
     height: 100%;
   }
-
   section#projects #container_projects .carousel-inner {
     position: relative;
     bottom: 53px;
@@ -2868,252 +2368,202 @@ section#idea #container_idea p {
     width: 24.2rem;
     left: 114px;
   }
-
   section#projects #container_projects #carouselExampleDark {
     position: relative;
     bottom: 2rem;
   }
-
   section#projects #container_projects .carousel-indicators {
     width: 30px;
     position: relative;
     right: 2.3rem;
   }
-
   section#projects #container_projects .carousel-indicators {
     position: relative;
     top: 4rem;
   }
-
   section#projects #container_projects .carousel-control-next-icon {
     position: relative;
     bottom: 1.5rem;
     left: 4.5rem;
     height: 10px;
   }
-
   section#projects #container_projects .carousel-control-prev-icon {
     position: relative;
     bottom: 1.5rem;
     right: 4.5rem;
     height: 10px;
   }
-
   section#services #container_services {
     height: 100%;
   }
-
   section#services #container_services #btn_card {
     margin-top: 6vh;
   }
-
   section#services #container_services .fas,
-section#services #container_services .fab {
+  section#services #container_services .fab {
     font-size: 35px;
   }
-
   section#services #container_services .card {
     height: 48vh;
   }
-
   section#services #container_services .card-text {
     height: 4rem;
   }
-
   section#call #container_call {
     height: 100%;
   }
-
   section#call #container_call .card .shadow {
     display: none;
   }
-
   section#call #container_call .card-body {
     width: 91vw;
     position: relative;
     left: 0rem h2;
     left-font-size: 16x;
   }
-
   section#call #container_call .card-body p {
     font-size: 15px;
   }
-
   section#call #container_call .card-body .info {
     position: relative;
     top: 7vh;
   }
-
   section#call #container_call .card-body .caption {
     font-size: 15px;
     width: 50%;
   }
-
   section#call #container_call .card-body .image-container img {
     width: 44%;
     height: 75%;
     position: absolute;
     right: 12rem;
   }
-
   section#idea #container_idea {
     width: 80%;
     height: 100%;
   }
-
   section#idea #container_idea h4,
-section#idea #container_idea p {
+  section#idea #container_idea p {
     font-size: 18px;
   }
-
   section#idea #container_idea #alert_idea {
     position: relative;
     left: 3rem;
     height: 100%;
     width: 94vw;
   }
-
   section#idea #container_idea .col-4 {
     width: 100%;
   }
-
   section#idea #container_idea .form-control {
     font-size: 10px;
   }
-
   section#idea #container_idea .btn.btn-primary {
     height: 4vh;
     font-size: 12px;
   }
-
   section#idea #container_idea #exampleFormControlTextarea1 {
     height: 21vh;
   }
-
   section#footer footer.bg-dark #container_footer {
     height: 100%;
   }
-
   section#footer footer.bg-dark #container_footer .row.text-center {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-
   section#footer footer.bg-dark #container_footer .col-4 {
     display: contents;
   }
-
   section#footer footer.bg-dark #container_footer .fas {
     font-size: 30px;
   }
-
   section#footer footer.bg-dark p {
     font-size: 18px;
   }
-
   section#footer footer.bg-dark #myBtn {
     display: none;
   }
 }
+
 @media (min-width: 833px) and (max-width: 1024px) {
   section#index #container_index {
     height: 100%;
   }
-
   section#index #container_index #title-t {
     border: 0;
   }
-
   section#index #container_index #title-top {
     font-size: 60px;
   }
-
   section#index #container_index #title-org {
     font-size: 45px;
   }
-
   section#index #container_index .takhasos {
     font-size: 40px;
   }
-
   section#index #container_index .ability-item {
     font-size: 40px;
   }
-
   section#index #container_index .fas {
     display: none;
   }
-
   section#index #container_index .fab {
     font-size: 45px;
     position: relative;
     bottom: 1px;
   }
-
   section#index #container_index .far {
     font-size: 45px;
     position: relative;
     bottom: 1px;
   }
-
   section#index #container_index .social-item {
     width: 35px;
     height: 30px;
   }
-
   section#info #container_info {
     height: 100%;
     background-color: white;
     width: 100vw;
   }
-
   section#info #container_info .btn {
     font-size: 2rem;
   }
-
   section#info #container_info h2 {
     font-size: 50px;
   }
-
   section#info #container_info p {
     font-size: 30px;
   }
-
   section#skills #container_skills {
     height: 100%;
     width: 100vw;
   }
-
   section#skills #container_skills h2 {
     font-size: 50px;
   }
-
   section#skills #container_skills p {
     font-size: 30px;
   }
-
   section#skills #container_skills h5 {
     font-size: 30px;
   }
-
   section#projects #container_projects {
     height: 100%;
     height: 36vh;
   }
-
   section#projects #container_projects h2 {
     font-size: 50px;
   }
-
   section#projects #container_projects p {
     font-size: 30px;
   }
-
   section#projects #container_projects .carousel-inner {
     position: relative;
     bottom: 53px;
@@ -3121,104 +2571,84 @@ section#idea #container_idea p {
     width: 53rem;
     left: 187px;
   }
-
   section#projects #container_projects #carouselExampleDark {
     position: relative;
     bottom: 2rem;
   }
-
   section#projects #container_projects .carousel-indicators {
     width: 85px;
     position: relative;
     right: 2.3rem;
   }
-
   section#projects #container_projects .carousel-indicators {
     position: relative;
     top: 16rem;
     right: 8rem;
   }
-
   section#projects #container_projects .carousel-control-next-icon {
     position: relative;
     bottom: 1.5rem;
     left: 10.5rem;
     height: 36px;
   }
-
   section#projects #container_projects .carousel-control-prev-icon {
     position: relative;
     bottom: 1.5rem;
     right: 10.5rem;
     height: 36px;
   }
-
   section#services #container_services {
     height: 100%;
   }
-
   section#services #container_services h2 {
     font-size: 50px;
   }
-
   section#services #container_services p {
     font-size: 30px;
   }
-
   section#services #container_services #btn_card {
     margin-top: 6vh;
   }
-
   section#services #container_services .fas,
-section#services #container_services .fab {
+  section#services #container_services .fab {
     font-size: 73px;
   }
-
   section#services #container_services h5.card-title {
     font-size: 35px;
   }
-
   section#services #container_services .card {
     height: 52vh;
   }
-
   section#services #container_services .card-text {
     height: 13rem;
     font-size: 32px;
     line-height: 57px;
   }
-
   section#services #container_services .btn {
     font-size: 2rem;
   }
-
   section#call #container_call {
     height: 100%;
   }
-
   section#call #container_call .card-body {
     width: 89vw;
     height: 84rem;
     margin-right: 23px;
   }
-
   section#call #container_call .card-body h2 {
     font-size: 45px;
     position: relative;
     right: 33px;
   }
-
   section#call #container_call .card-body p {
     font-size: 35px;
   }
-
   section#call #container_call .card-body .info {
     position: relative;
     top: 45vh;
     right: 13rem;
     line-height: 3rem;
   }
-
   section#call #container_call .card-body .caption {
     position: absolute;
     right: 0px;
@@ -3227,7 +2657,6 @@ section#services #container_services .fab {
     width: 132%;
     line-height: 4rem;
   }
-
   section#call #container_call .card-body .image-container img {
     border-radius: 20%;
     border: 3px solid #fdfdfd;
@@ -3237,11 +2666,10 @@ section#services #container_services .fab {
     right: 11px;
     top: 46px;
   }
-
   section#call #container_call .card-body .image-container img:hover {
     cursor: pointer;
     -webkit-box-shadow: 0px 0px 20px #ffffff;
-    box-shadow: 0px 0px 20px #ffffff;
+            box-shadow: 0px 0px 20px #ffffff;
     z-index: 2;
     -webkit-transition: all 200ms ease-in;
     -webkit-transform: scale(1.05);
@@ -3253,7 +2681,6 @@ section#services #container_services .fab {
     transition: all 500ms ease-in;
     transform: scale(1.05);
   }
-
   section#call #container_call .card:nth-child(1):before {
     content: "";
     height: 4px;
@@ -3266,99 +2693,81 @@ section#services #container_services .fab {
     background: #c913ad;
     margin-right: 25px;
   }
-
   section#idea #container_idea {
     width: 100%;
     height: 100%;
   }
-
   section#idea #container_idea h4 {
     font-size: 33px;
   }
-
   section#idea #container_idea h2 {
     font-size: 50px;
   }
-
   section#idea #container_idea p {
     font-size: 30px;
   }
-
   section#idea #container_idea #alert_idea {
     position: relative;
     height: 130vh;
     width: 94vw;
     right: 0.7rem;
   }
-
   section#idea #container_idea .col-4 {
     width: 100%;
   }
-
   section#idea #container_idea .form-control {
     font-size: 33px;
   }
-
   section#idea #container_idea .btn.btn-primary {
     height: 4vh;
     font-size: 28px;
   }
-
   section#idea #container_idea #exampleFormControlTextarea1 {
     height: 48vh;
   }
-
   section#footer footer.bg-dark #container_footer {
     height: 100%;
     margin-top: 72px;
   }
-
   section#footer footer.bg-dark #container_footer .row.text-center {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-
   section#footer footer.bg-dark #container_footer .col-4 {
     display: contents;
     margin-bottom: 59px;
   }
-
   section#footer footer.bg-dark #container_footer #myBtn {
     display: none;
   }
-
   section#footer footer.bg-dark #container_footer .fas {
     font-size: 35px;
   }
-
   section#footer footer.bg-dark h2 {
     font-size: 50px;
   }
-
   section#footer footer.bg-dark p {
     font-size: 35px;
   }
-
   section#footer footer.bg-dark #myBtn {
     display: none;
   }
 }
+
 @media (max-width: 320px) {
   header .search {
     position: absolute;
     top: 22%;
     left: 3%;
   }
-
   header .search:hover {
     width: 158px;
   }
-
   header .search .search-txt {
     position: relative;
     right: 10px;
@@ -3379,19 +2788,15 @@ section#services #container_services .fab {
     padding-right: 10px;
     font-weight: bold;
   }
-
   section#resume #container_resume .wb-bg-banner {
     height: 240vh;
   }
-
   section#resume #container_resume .row {
     margin-top: 70px;
   }
-
   section#resume #container_resume .col-6 {
     width: 100%;
   }
-
   section#resume #container_resume .card {
     overflow: hidden;
     height: 109vh;
@@ -3399,26 +2804,23 @@ section#services #container_services .fab {
     position: absolute;
     right: 0px;
   }
-
   section#resume #container_resume .card h4 {
     font-size: 18px;
   }
-
   section#resume #container_resume .card p {
     font-size: 12px;
   }
 }
+
 @media (min-width: 321px) and (max-width: 767px) {
   header .search {
     position: absolute;
     top: 22%;
     left: 5%;
   }
-
   header .search:hover {
     width: 175px;
   }
-
   header .search .search-txt {
     position: relative;
     right: 10px;
@@ -3439,20 +2841,16 @@ section#services #container_services .fab {
     padding-right: 10px;
     font-weight: bold;
   }
-
   section#resume #container_resume {
     height: 200vh;
   }
-
   section#resume #container_resume .row {
     margin-top: 50px;
   }
-
   section#resume #container_resume .col-6 {
     width: 100%;
     margin-top: 50px;
   }
-
   section#resume #container_resume .card {
     overflow: hidden;
     height: 80vh;
@@ -3461,17 +2859,16 @@ section#services #container_services .fab {
     left: 24px;
   }
 }
+
 @media (min-width: 411px) and (max-width: 767px) {
   header .search {
     position: absolute;
     top: 22%;
     left: 5%;
   }
-
   header .search:hover {
     width: 175px;
   }
-
   header .search .search-txt {
     position: relative;
     right: 10px;
@@ -3492,20 +2889,16 @@ section#services #container_services .fab {
     padding-right: 10px;
     font-weight: bold;
   }
-
   section#resume #container_resume {
     height: 200vh;
   }
-
   section#resume #container_resume .row {
     margin-top: 50px;
   }
-
   section#resume #container_resume .col-6 {
     width: 100%;
     margin-top: 50px;
   }
-
   section#resume #container_resume .card {
     overflow: hidden;
     height: 82vh;
@@ -3514,17 +2907,16 @@ section#services #container_services .fab {
     left: 24px;
   }
 }
+
 @media (min-width: 768px) and (max-width: 832px) {
   header .search {
     position: absolute;
     top: 22%;
     left: 5%;
   }
-
   header .search:hover {
     width: 175px;
   }
-
   header .search .search-txt {
     position: relative;
     right: 10px;
@@ -3545,44 +2937,37 @@ section#services #container_services .fab {
     padding-right: 10px;
     font-weight: bold;
   }
-
   section#resume #container_resume {
     height: 100%;
   }
-
   section#resume #container_resume .col-6 {
     width: 100%;
   }
-
   section#resume #container_resume .card {
     width: auto;
     margin-bottom: 30px;
   }
-
   section#resume #container_resume .card h4 {
     font-size: 26px;
   }
-
   section#resume #container_resume .card p {
     font-size: 22px;
   }
-
   section#resume #container_resume .card span,
-section#resume #container_resume .card a {
+  section#resume #container_resume .card a {
     font-size: 25px;
   }
 }
+
 @media (min-width: 833px) and (max-width: 1024px) {
   header .search {
     position: absolute;
     top: 37%;
     left: 1%;
   }
-
   header .search:hover {
     width: 148px;
   }
-
   header .search .search-txt {
     position: relative;
     right: 35px;
@@ -3603,59 +2988,50 @@ section#resume #container_resume .card a {
     padding-right: 10px;
     font-weight: bold;
   }
-
   section#resume #container_resume {
     height: 110vh;
   }
-
   section#resume #container_resume .card {
     height: 40rem;
     width: 934px;
     margin-bottom: 50px;
   }
-
   section#resume #container_resume .row {
     margin-top: 90px;
   }
-
   section#resume #container_resume .col-6 {
     width: 100%;
   }
-
   section#resume #container_resume span,
-section#resume #container_resume a {
+  section#resume #container_resume a {
     font-size: 40px;
   }
-
   section#resume #container_resume h4,
-section#resume #container_resume h5 {
+  section#resume #container_resume h5 {
     font-size: 35px;
   }
-
   section#resume #container_resume h1,
-section#resume #container_resume h2,
-section#resume #container_resume h3,
-section#resume #container_resume h4,
-section#resume #container_resume h5,
-section#resume #container_resume p {
+  section#resume #container_resume h2,
+  section#resume #container_resume h3,
+  section#resume #container_resume h4,
+  section#resume #container_resume h5,
+  section#resume #container_resume p {
     line-height: 54px;
   }
-
   section#resume #container_resume p {
     font-size: 30px;
   }
 }
+
 @media (max-width: 320px) {
   header .search {
     position: absolute;
     top: 22%;
     left: 3%;
   }
-
   header .search:hover {
     width: 158px;
   }
-
   header .search .search-txt {
     position: relative;
     right: 10px;
@@ -3676,39 +3052,33 @@ section#resume #container_resume p {
     padding-right: 10px;
     font-weight: bold;
   }
-
   section#See_More .container.portfolio {
     height: 100%;
   }
-
   section#See_More .container.portfolio .font-weight-bold {
     font-size: 10px;
   }
-
   section#See_More .container.portfolio span {
     font-size: 10px;
   }
-
   section#See_More .container.portfolio .mx-4 {
     margin-right: 0.5rem !important;
     margin-left: 0.5rem !important;
   }
-
   section#See_More .container.portfolio .grid-item {
     width: 100%;
   }
 }
+
 @media (min-width: 320px) and (max-width: 832px) {
   header .search {
     position: absolute;
     top: 22%;
     left: 3%;
   }
-
   header .search:hover {
     width: 175px;
   }
-
   header .search .search-txt {
     position: relative;
     right: 10px;
@@ -3729,39 +3099,33 @@ section#resume #container_resume p {
     padding-right: 10px;
     font-weight: bold;
   }
-
   section#See_More .container.portfolio {
     height: 100%;
   }
-
   section#See_More .container.portfolio .font-weight-bold {
     font-size: 12px;
   }
-
   section#See_More .container.portfolio span {
     font-size: 12px;
   }
-
   section#See_More .container.portfolio .mx-4 {
     margin-right: 0.5rem !important;
     margin-left: 0.5rem !important;
   }
-
   section#See_More .container.portfolio .grid-item {
     width: 100%;
   }
 }
+
 @media (min-width: 832px) and (max-width: 1024px) {
   header .search {
     position: absolute;
     top: 37%;
     left: 1%;
   }
-
   header .search:hover {
     width: 148px;
   }
-
   header .search .search-txt {
     position: relative;
     right: 35px;
@@ -3782,28 +3146,21 @@ section#resume #container_resume p {
     padding-right: 10px;
     font-weight: bold;
   }
-
   section#See_More .container.portfolio {
     height: 100%;
   }
-
   section#See_More .container.portfolio .font-weight-bold {
     font-size: 22px;
   }
-
   section#See_More .container.portfolio span {
     font-size: 22px;
   }
-
   section#See_More .container.portfolio .mx-4 {
     margin-right: 0.5rem !important;
     margin-left: 0.5rem !important;
   }
-
   section#See_More .container.portfolio .grid-item {
     width: 100%;
   }
 }
-/*# sourceMappingURL=responsive.css.map */
-
 /*# sourceMappingURL=responsive.css.map */
