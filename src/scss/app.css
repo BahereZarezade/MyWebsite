@@ -181,8 +181,8 @@ header .nav-item {
 }
 
 section#index #container_index {
-  background: -webkit-gradient(linear, left top, left bottom, from(#4b5296), color-stop(#222c47), to(#0f1127));
-  background: linear-gradient(to bottom, #4b5296, #222c47, #0f1127);
+  background: -webkit-gradient(linear, left top, right bottom, from(#04043f), color-stop(#04043f), to(#6868a5));
+  background: linear-gradient(to bottom right, #04043f, #04043f, #6868a5);
 }
 
 section#index #container_index .wb-bg-banner {
@@ -363,8 +363,8 @@ section#services #container_services .text-secondary {
 }
 
 section#services #container_services .card {
-  background: -webkit-gradient(linear, left top, left bottom, from(#4b5296), color-stop(#222c47), to(#0f1127));
-  background: linear-gradient(to bottom, #4b5296, #222c47, #0f1127);
+  background: -webkit-gradient(linear, left top, right bottom, from(#04043f), color-stop(#04043f), to(#6868a5));
+  background: linear-gradient(to bottom right, #04043f, #04043f, #6868a5);
   -webkit-transition-duration: 0.7s;
           transition-duration: 0.7s;
   height: 52vh;
@@ -531,8 +531,8 @@ section#idea #container_idea textarea::placeholder {
 }
 
 section#footer .bg-dark {
-  background: -webkit-gradient(linear, left top, left bottom, from(#4b5296), color-stop(#222c47), to(#0f1127)) !important;
-  background: linear-gradient(to bottom, #4b5296, #222c47, #0f1127) !important;
+  background: -webkit-gradient(linear, left top, right bottom, from(#04043f), color-stop(#04043f), to(#6868a5));
+  background: linear-gradient(to bottom right, #04043f, #04043f, #6868a5);
 }
 
 section#footer #container_footer {
@@ -597,8 +597,8 @@ section#footer #container_footer .container.footer textarea {
 }
 
 section#See_More {
-  background: -webkit-gradient(linear, left top, left bottom, from(#4b5296), color-stop(#222c47), to(#0f1127));
-  background: linear-gradient(to bottom, #4b5296, #222c47, #0f1127);
+  background: -webkit-gradient(linear, left top, right bottom, from(#04043f), color-stop(#04043f), to(#6868a5));
+  background: linear-gradient(to bottom right, #04043f, #04043f, #6868a5);
 }
 
 section#See_More .container.portfolio {
@@ -620,12 +620,12 @@ section#See_More .container.portfolio .font-weight-bold {
 }
 
 section#See_More .container.portfolio .colorA {
-  color: #06136b;
+  color: #0d6efd;
 }
 
 section#resume {
-  background: -webkit-gradient(linear, left top, left bottom, from(#4b5296), color-stop(#222c47), to(#0f1127));
-  background: linear-gradient(to bottom, #4b5296, #222c47, #0f1127);
+  background: -webkit-gradient(linear, left top, right bottom, from(#04043f), color-stop(#04043f), to(#6868a5));
+  background: linear-gradient(to bottom right, #04043f, #04043f, #6868a5);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -672,9 +672,17 @@ section#resume #container_resume p {
 }
 
 section#resume #container_resume h2 {
-  color: #000;
+  color: #dddddd;
   font-size: 20px;
   font-weight: bold;
+}
+
+section#resume #container_resume .text-muted, section#resume #container_resume a {
+  color: #978bff !important;
+}
+
+section#resume #container_resume span {
+  color: #fff;
 }
 
 section#resume #container_resume .header {
@@ -682,9 +690,9 @@ section#resume #container_resume .header {
 }
 
 section#resume #container_resume .card {
-  background: rgba(27, 22, 56, 0.863);
+  background: rgba(31, 9, 155, 0.863);
   cursor: pointer;
-  border-radius: 0;
+  border-radius: 20px;
   position: relative;
   margin: 0px 20px 0px 30px;
   width: 450px;

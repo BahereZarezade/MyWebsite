@@ -163,7 +163,13 @@ header {
 section#index {
   #container_index {
     //background: linear-gradient( to bottom, #2c5364, #203a43, #0f2027 );
-    background: linear-gradient(to bottom, #4b5296, #222c47, #0f1127);
+    //background: linear-gradient(to bottom, #4b5296, #222c47, #0f1127);
+    background: linear-gradient(
+      to bottom right,
+      rgb(4, 4, 63),
+      rgb(4, 4, 63),
+      rgb(104, 104, 165)
+    );
     .wb-bg-banner {
       height: 100vh;
     }
@@ -321,7 +327,13 @@ section#services {
     .card {
       //background: #185053;
       //background: #233669;
-      background: linear-gradient(to bottom, #4b5296, #222c47, #0f1127);
+      //background: linear-gradient(to bottom, #4b5296, #222c47, #0f1127);
+      background: linear-gradient(
+        to bottom right,
+        rgb(4, 4, 63),
+        rgb(4, 4, 63),
+        rgb(104, 104, 165)
+      );
       transition-duration: 0.7s;
       height: 52vh;
       cursor: pointer;
@@ -476,11 +488,11 @@ section#idea {
 section#footer {
   .bg-dark {
     background: linear-gradient(
-      to bottom,
-      #4b5296,
-      #222c47,
-      #0f1127
-    ) !important;
+      to bottom right,
+      rgb(4, 4, 63),
+      rgb(4, 4, 63),
+      rgb(104, 104, 165)
+    );
   }
   #container_footer {
     padding-top: 4vh;
@@ -527,7 +539,13 @@ section#footer {
 //*********************************See_More****************************************
 section#See_More {
   //background-color: #203a43;
-  background: linear-gradient(to bottom, #4b5296, #222c47, #0f1127);
+  //background: linear-gradient(to bottom, #4b5296, #222c47, #0f1127);
+  background: linear-gradient(
+      to bottom right,
+      rgb(4, 4, 63),
+      rgb(4, 4, 63),
+      rgb(104, 104, 165)
+    );
   .container.portfolio {
     height: 190vh;
     .filters span {
@@ -543,14 +561,20 @@ section#See_More {
     }
     .colorA {
       //color: #198754;
-      color: #06136b;
+      color: #0d6efd;
     }
   }
 }
 //*********************************resume****************************************
 section#resume {
   //background-color: #203a43;
-  background: linear-gradient(to bottom, #4b5296, #222c47, #0f1127);
+  //background: linear-gradient(to bottom, #4b5296, #222c47, #0f1127);
+  background: linear-gradient(
+    to bottom right,
+    rgb(4, 4, 63),
+    rgb(4, 4, 63),
+    rgb(104, 104, 165)
+  );
   display: flex;
   justify-content: center;
   align-items: center;
@@ -580,17 +604,23 @@ section#resume {
       line-height: 40px;
     }
     h2 {
-      color: #000;
+      color: rgb(221, 221, 221);
       font-size: 20px;
       font-weight: bold;
+    }
+    .text-muted , a{
+      color: rgb(151, 139, 255) !important;
+    }
+    span {
+      color: #fff;
     }
     .header {
       margin: 0px 30px 0px 0px;
     }
     .card {
-      background: rgba(27, 22, 56, 0.863);
+      background: rgba(31, 9, 155, 0.863);
       cursor: pointer;
-      border-radius: 0;
+      border-radius: 20px;
       position: relative;
       margin: 0px 20px 0px 30px;
       width: 450px;
