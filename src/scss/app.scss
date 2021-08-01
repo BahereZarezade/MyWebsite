@@ -300,7 +300,6 @@ section#services {
       font-size: 16px;
       color: white;
     }
-
     .fa-5x {
       font-size: 3rem;
       color: white;
@@ -392,80 +391,96 @@ section#services {
 //**************************************call****************************************
 section#call {
   #container_call {
-    height: 80vh;
-    .card {
-      box-sizing: border-box;
+    height: 150vh;
+    width: 57vw;
+    .call {
+      display: grid;
+      grid-template-rows: auto;
+      justify-content: center;
+    }
+    .box {
+      background: linear-gradient(
+      to bottom right,
+      rgb(4, 4, 63),
+      rgb(4, 4, 63),
+      rgb(104, 104, 165),
+    );
+      padding: 20px;
       display: flex;
-      align-items: center;
-      justify-self: center;
-      cursor: pointer;
-      border: 1px solid rgba(0, 0, 0, 0.459);
-      letter-spacing: normal;
-      margin-bottom: 50px;
-      &:nth-child(1):before {
-        content: "";
-        height: 4px;
-        position: absolute;
-        left: 1.25rem;
-        right: 1.25rem;
-        top: 379px;
-        border-top-left-radius: 4px;
-        border-top-right-radius: 4px;
-        background: #c913ad;
+      //float: left;
+      justify-content: center;   
+    }
+    .box .right {
+      width: 70%;
+      background: linear-gradient(
+      to bottom right,
+      rgb(4, 4, 63),
+      rgb(104, 104, 165),
+    );
+      float: left;
+      display: grid;
+      grid-template-rows: auto;
+      justify-content: center;
+      padding: 20px;
+      line-height: 30px;
+      img {
+        border-radius: 10%;
+        max-width: 100%;
+        width: 150px;
+        display: flex;
+        height: 200px;
+        margin-right: 80px;
+        //float: left;
+      }
+      a{
+        display: flex;
+        justify-content: center;
+        color: rgb(53, 53, 255);
+      }
+      span.a{
+        display: flex;
+        justify-content: center;
+        text-decoration: underline;
+        color: #0f2027;
+      }
+      span{
+        display: flex;
+        justify-content: center;
       }
     }
-    .card-body {
-      cursor: pointer;
-      height: 100%;
-      width: 55vw;
+    .right h2 {
+      display: flex;
+      justify-content: center;
+      font-size: 24px;
     }
-    .col-7 {
-      margin: 30px 68px 0px 0px;
+    .right p {
+      display: flex;
+      justify-content: center;
+      color: #fff;
+      text-align: center;
+      margin-top: 20px;
     }
-    .col-md-6 {
-      padding-left: 7rem;
-      padding-right: 12rem;
-    }
-    .image-container img {
-      cursor: pointer;
-      width: 37%;
-      height: 76%;
-      border-radius: 20%;
-      border: 3px solid rgb(253, 253, 253);
-      position: absolute;
-      background: #eeeeee;
-      bottom: 13%;
-      right: 70%;
-      &:hover {
-        cursor: pointer;
-        box-shadow: 0px 0px 20px #ffffff;
-        z-index: 2;
-        -webkit-transition: all 200ms ease-in;
-        -webkit-transform: scale(1.05);
-        -ms-transition: all 500ms ease-in;
-        -ms-transform: scale(1.05);
-        -moz-transition: all 500ms ease-in;
-        -moz-transform: scale(1.05);
-        transition: all 500ms ease-in;
-        transform: scale(1.05);
-      }
-    }
-    .caption {
-      position: relative;
-      right: 70px;
-      bottom: 24px;
+    .right a {
+      font-size: 20px;
+      text-decoration: none;
     }
   }
 }
 //**************************************idea****************************************
 section#idea {
+  background: rgb(238, 238, 238);
+  height: 100vh;
   #container_idea {
-    height: 100%;
-    width: 57vw;
+    height: 50vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     #alert_idea {
-      position: relative;
-      left: 1.5vh;
-      margin-top: 120px;
+      margin-top: 20rem;
+      width: 60vw;
+      align-items: center;
     }
     #exampleFormControlTextarea1 {
       height: 142px;

@@ -325,79 +325,86 @@ section#services #container_services .swiper-slide img {
 }
 
 section#call #container_call {
-  height: 80vh;
-}
-section#call #container_call .card {
-  box-sizing: border-box;
-  display: flex;
-  align-items: center;
-  justify-self: center;
-  cursor: pointer;
-  border: 1px solid rgba(0, 0, 0, 0.459);
-  letter-spacing: normal;
-  margin-bottom: 50px;
-}
-section#call #container_call .card:nth-child(1):before {
-  content: "";
-  height: 4px;
-  position: absolute;
-  left: 1.25rem;
-  right: 1.25rem;
-  top: 379px;
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-  background: #c913ad;
-}
-section#call #container_call .card-body {
-  cursor: pointer;
-  height: 100%;
-  width: 55vw;
-}
-section#call #container_call .col-7 {
-  margin: 30px 68px 0px 0px;
-}
-section#call #container_call .col-md-6 {
-  padding-left: 7rem;
-  padding-right: 12rem;
-}
-section#call #container_call .image-container img {
-  cursor: pointer;
-  width: 37%;
-  height: 76%;
-  border-radius: 20%;
-  border: 3px solid #fdfdfd;
-  position: absolute;
-  background: #eeeeee;
-  bottom: 13%;
-  right: 70%;
-}
-section#call #container_call .image-container img:hover {
-  cursor: pointer;
-  box-shadow: 0px 0px 20px #ffffff;
-  z-index: 2;
-  -webkit-transition: all 200ms ease-in;
-  -webkit-transform: scale(1.05);
-  -ms-transition: all 500ms ease-in;
-  -ms-transform: scale(1.05);
-  -moz-transition: all 500ms ease-in;
-  -moz-transform: scale(1.05);
-  transition: all 500ms ease-in;
-  transform: scale(1.05);
-}
-section#call #container_call .caption {
-  position: relative;
-  right: 70px;
-  bottom: 24px;
-}
-
-section#idea #container_idea {
-  height: 100%;
+  height: 150vh;
   width: 57vw;
 }
+section#call #container_call .call {
+  display: grid;
+  grid-template-rows: auto;
+  justify-content: center;
+}
+section#call #container_call .box {
+  background: linear-gradient(to bottom right, #04043f, #04043f, #6868a5);
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+section#call #container_call .box .right {
+  width: 70%;
+  background: linear-gradient(to bottom right, #04043f, #6868a5);
+  float: left;
+  display: grid;
+  grid-template-rows: auto;
+  justify-content: center;
+  padding: 20px;
+  line-height: 30px;
+}
+section#call #container_call .box .right img {
+  border-radius: 10%;
+  max-width: 100%;
+  width: 150px;
+  display: flex;
+  height: 200px;
+  margin-right: 80px;
+}
+section#call #container_call .box .right a {
+  display: flex;
+  justify-content: center;
+  color: #3535ff;
+}
+section#call #container_call .box .right span.a {
+  display: flex;
+  justify-content: center;
+  text-decoration: underline;
+  color: #0f2027;
+}
+section#call #container_call .box .right span {
+  display: flex;
+  justify-content: center;
+}
+section#call #container_call .right h2 {
+  display: flex;
+  justify-content: center;
+  font-size: 24px;
+}
+section#call #container_call .right p {
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  margin-top: 20px;
+}
+section#call #container_call .right a {
+  font-size: 20px;
+  text-decoration: none;
+}
+
+section#idea {
+  background: #eeeeee;
+  height: 100vh;
+}
+section#idea #container_idea {
+  height: 50vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
 section#idea #container_idea #alert_idea {
-  position: relative;
-  left: 1.5vh;
-  margin-top: 120px;
+  margin-top: 20rem;
+  width: 60vw;
+  align-items: center;
 }
 section#idea #container_idea #exampleFormControlTextarea1 {
   height: 142px;
