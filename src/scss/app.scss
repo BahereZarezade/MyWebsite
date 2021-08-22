@@ -400,23 +400,24 @@ section#call {
     }
     .box {
       background: linear-gradient(
-      to bottom right,
-      rgb(4, 4, 63),
-      rgb(4, 4, 63),
-      rgb(104, 104, 165),
-    );
+        to bottom right,
+        rgb(4, 4, 63),
+        rgb(4, 4, 63),
+        rgb(104, 104, 165)
+      );
+      margin-bottom: 50px;
       padding: 20px;
       display: flex;
       //float: left;
-      justify-content: center;   
+      justify-content: center;
     }
     .box .right {
       width: 70%;
       background: linear-gradient(
-      to bottom right,
-      rgb(4, 4, 63),
-      rgb(104, 104, 165),
-    );
+        to bottom right,
+        rgb(4, 4, 63),
+        rgb(104, 104, 165)
+      );
       float: left;
       display: grid;
       grid-template-rows: auto;
@@ -432,18 +433,18 @@ section#call {
         margin-right: 80px;
         //float: left;
       }
-      a{
+      a {
         display: flex;
         justify-content: center;
         color: rgb(53, 53, 255);
       }
-      span.a{
+      span.a {
         display: flex;
         justify-content: center;
         text-decoration: underline;
         color: #0f2027;
       }
-      span{
+      span {
         display: flex;
         justify-content: center;
       }
@@ -469,7 +470,7 @@ section#call {
 //**************************************idea****************************************
 section#idea {
   background: rgb(238, 238, 238);
-  height: 100vh;
+  height: 150vh;
   #container_idea {
     height: 50vh;
     width: 100vw;

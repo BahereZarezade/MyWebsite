@@ -335,6 +335,7 @@ section#call #container_call .call {
 }
 section#call #container_call .box {
   background: linear-gradient(to bottom right, #04043f, #04043f, #6868a5);
+  margin-bottom: 50px;
   padding: 20px;
   display: flex;
   justify-content: center;
@@ -391,7 +392,7 @@ section#call #container_call .right a {
 
 section#idea {
   background: #eeeeee;
-  height: 100vh;
+  height: 150vh;
 }
 section#idea #container_idea {
   height: 50vh;
